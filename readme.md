@@ -14,6 +14,10 @@ Once in marketo, use template in a program and swap out content for tokens.
 
 ### TODO
 
-Swapping of the tokens in marketo.
+~~Add smooth scrolling for page anchors.~~
 
-Adding the tracking tags to the navigation items, maybe needs to be dynamically added since the links are created in wysiwyg?... maybe.
+Swapping of the tokens in marketo. 
+
+~~Adding the tracking tags to the navigation items, maybe needs to be dynamically added since the links are created in wysiwyg?... maybe.~~
+
+When we get the Navigation example, code the collapsed version of the subnav.
