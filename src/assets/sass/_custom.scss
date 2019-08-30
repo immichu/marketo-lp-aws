@@ -1,0 +1,286 @@
+.saponaws-hero {
+	background: center center/cover no-repeat $aws-squid;
+	h1 {
+		font-size: 4.8rem;
+		font-weight: 400;
+		line-height: 6.2rem;
+		color: #ffffff;
+		margin: 0;
+	}
+	h4 {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 2.7rem;
+		color: #ffffff;
+		margin-top: ($spacer * 2.5);
+		margin-bottom: 0;
+	}
+	a {
+		display: inline-block;
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 3.1rem;
+		color: #ffffff;
+		margin-top: ($spacer * 4.5);
+	}
+	.saponaws-hero-image {
+		display: flex;
+	}
+}
+
+.saponaws-navlinks {
+	background: #f2f4f4;
+	nav {
+		ul {
+			display: flex;
+			margin: 0;
+			list-style-type: none;
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+			@include media-breakpoint-down(md) {
+				flex-direction: column;
+			}
+			li {
+				margin-right: ($spacer * 4.5);
+				padding: 0.3rem 0;
+				@include media-breakpoint-down(md) {
+					margin-right: ($spacer * 3);
+				}
+				@include media-breakpoint-down(sm) {
+					margin-right: 0;
+				}
+				a {
+					font-size: 1.4rem;
+					font-weight: 500;
+					line-height: 2.2rem;
+					color: $aws-squid;
+				}
+			}
+		}
+	}
+	&.sticky {
+		position: fixed;
+		position: sticky;
+		top: 68px;
+		width: 100%;
+		z-index: 1;
+		@include media-breakpoint-down(sm) {
+			top: 0px;
+		}
+	}
+}
+
+.saponaws-lead {
+	h3 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 3rem;
+		color: $aws-squid;
+		margin-bottom: 1.5rem;
+	}
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.5rem;
+		color: $aws-squid;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.saponaws-reasons {
+	background: $aws-squid;
+	.saponaws-reasons-title {
+		h3 {
+			font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+			font-size: 2rem;
+			font-weight: 500;
+			line-height: 3rem;
+			color: #ffffff;
+			text-align: center;
+		}
+	}
+	.saponaws-reasons-block {
+		@include make-col-ready();
+		@include make-col(4);
+		@include media-breakpoint-down(md) {
+			@include make-col(6);
+		}
+		@include media-breakpoint-down(sm) {
+			@include make-col(12);
+		}
+		> div {
+			padding: 2rem;
+		}
+		figure {
+			text-align: center;
+			margin-bottom: 1.5rem;
+		}
+		h4 {
+			font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+			font-size: 1.8rem;
+			font-weight: 500;
+			line-height: 2.7rem;
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 1.5rem;
+		}
+		p {
+			font-size: 1.4rem;
+			font-weight: 300;
+			line-height: 2.2rem;
+			color: #ffffff;
+			text-align: center;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.saponaws-reasons-cta {
+		text-align: center;
+	}
+}
+
+.saponaws-case-studies {
+	h3 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 3rem;
+		color: $aws-squid;
+		margin-bottom: 3rem;
+	}
+	.cases {
+		@include make-row();
+		padding-top: ($spacer * 3);
+		padding-bottom: ($spacer * 3);
+		.case-image {
+			margin-bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include make-col-ready();
+			@include make-col(3);
+			@include media-breakpoint-down(md) {
+				@include make-col(4);
+				margin-bottom: ($spacer * 3);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);
+			}
+			figure {
+				margin-bottom: 0;
+			}
+		}
+		.case-content {
+			@include make-col-ready();
+			@include make-col(9);
+			@include media-breakpoint-down(md) {
+				@include make-col(8);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);
+			}
+			p {
+				font-size: 1.6rem;
+				font-weight: 300;
+				line-height: 2.5rem;
+				color: $aws-squid;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				strong {
+					font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+			}
+			a {
+				font-size: 1.4rem;
+				font-weight: 400;
+				line-height: 2.2rem;
+			}
+		}
+	}
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.5rem;
+		color: $aws-squid;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		strong {
+			font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		}
+	}
+	a {
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 2.2rem;
+	}
+}
+
+.saponaws-panel {
+	background: $aws-squid;
+	h1 {
+		font-size: 4.8rem;
+		font-weight: 400;
+		line-height: 6.2rem;
+		color: #ffffff;
+		margin: 0;
+	}
+	h4 {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 2.7rem;
+		color: #ffffff;
+		margin-top: ($spacer * 2.5);
+		margin-bottom: 0;
+	}
+}
+
+.saponaws-additional {
+	h3 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 3rem;
+		color: $aws-squid;
+	}
+	.saponaws-card {
+		@include make-col-ready();
+		@include make-col(6);
+		@include media-breakpoint-down(md) {
+			@include make-col(12);
+		}
+		padding-top: ($spacer * 3);
+		padding-bottom: ($spacer * 3);
+		display: flex;
+		> div {
+			flex: 1;
+			padding: 3rem 1.5rem;
+			border: 1px solid #d5dbdb;
+			figure {
+				margin-bottom: 0;
+			}
+			p {
+				font-size: 1.6rem;
+				font-weight: 300;
+				line-height: 2.2rem;
+				color: $aws-squid;
+				margin-bottom: 2rem;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				strong {
+					font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+			}
+			> div {
+				margin-top: ($spacer * 2.5);
+			}
+		}
+	}
+}

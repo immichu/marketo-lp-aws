@@ -1,0 +1,56 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 769px,
+  lg: 980px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 576px,
+  md: 769px,
+  lg: 980px,
+  xl: 1200px
+);
+
+$spacer: 1rem !default;
+$spacers: () !default;
+
+$spacers: map-merge(
+  (
+		0: 0,
+		1: ($spacer * .25),
+		2: ($spacer * .5),
+		3: $spacer, 
+		4: ($spacer * 1.5),
+		5: ($spacer * 3),
+    6: ($spacer * 2.5),
+    7: ($spacer * 3),
+    8: ($spacer * 3.5),
+    9: ($spacer * 4),
+    10: ($spacer * 4.5),
+    11: ($spacer * 5),
+    12: ($spacer * 5.5),
+    13: ($spacer * 6),
+    14: ($spacer * 6.5),
+    15: ($spacer * 7),
+    16: ($spacer * 7.5),
+    17: ($spacer * 8),
+    18: ($spacer * 8.5),
+    19: ($spacer * 9),
+    20: ($spacer * 9.5),
+  ),
+  $spacers
+);
+
+$aws-squid: #232F3E;
+$aws-orange: #ff9900;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "aws-squid": $aws-squid,
+    "aws-orange": $aws-orange
+  ),
+  $theme-colors
+);

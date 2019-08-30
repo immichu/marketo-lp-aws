@@ -1,0 +1,26 @@
+{
+  "name": "marketo-lp",
+  "version": "1.0.0",
+  "description": "Flat page builder to create Marketo landing pages",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Imran Dewji <immichu@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "panini": "^1.6.3"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-order": "^1.2.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.4.1"
+  }
+}
