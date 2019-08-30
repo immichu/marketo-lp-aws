@@ -6773,9 +6773,6 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
       padding: 0.3rem 0; }
       @media (max-width: 979.98px) {
         .saponaws .saponaws-navlinks nav ul li {
-          margin-right: 3rem; } }
-      @media (max-width: 768.98px) {
-        .saponaws .saponaws-navlinks nav ul li {
           margin-right: 0; } }
       .saponaws .saponaws-navlinks nav ul li a {
         font-size: 1.4rem;
@@ -6871,6 +6868,9 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
   margin-left: -15px;
   padding-top: 3rem;
   padding-bottom: 3rem; }
+  .saponaws .saponaws-case-studies .cases + p {
+    height: 0;
+    margin: 0; }
   .saponaws .saponaws-case-studies .cases .case-image {
     margin-bottom: 0;
     display: flex;
@@ -6933,9 +6933,9 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
 
 .saponaws .saponaws-case-studies a {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 2.2rem; }
+  line-height: 2.5rem; }
 
 .saponaws .saponaws-panel {
   background: #232F3E; }
