@@ -1,4 +1,4 @@
-.saponaws-hero {
+.winonaws-hero {
 	background: center center/cover no-repeat $aws-squid;
 	h1 {
 		font-size: 4.8rem;
@@ -24,12 +24,12 @@
 		color: #ffffff;
 		margin-top: ($spacer * 4.5);
 	}
-	.saponaws-hero-image {
+	.winonaws-hero-image {
 		display: flex;
 	}
 }
 
-.saponaws-navlinks {
+.winonaws-navlinks {
 	background: #f2f4f4;
 	nav {
 		ul {
@@ -68,7 +68,7 @@
 	}
 }
 
-.saponaws-lead {
+.winonaws-lead {
 	h3 {
 		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
 		font-size: 2rem;
@@ -88,60 +88,192 @@
 	}
 }
 
-.saponaws-reasons {
-	background: $aws-squid;
-	.saponaws-reasons-title {
-		h3 {
-			font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-			font-size: 2rem;
-			font-weight: 500;
-			line-height: 3rem;
-			color: #ffffff;
-			text-align: center;
-		}
+.winonaws-advantage {
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+		margin-bottom: 0;
 	}
-	.saponaws-reasons-block {
-		@include make-col-ready();
-		@include make-col(4);
-		@include media-breakpoint-down(md) {
-			@include make-col(6);
-		}
-		@include media-breakpoint-down(sm) {
-			@include make-col(12);
-		}
-		> div {
-			padding: 2rem;
-		}
-		figure {
-			text-align: center;
-			margin-bottom: 1.5rem;
-		}
-		h4 {
-			font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-			font-size: 1.8rem;
-			font-weight: 500;
-			line-height: 2.7rem;
-			color: #ffffff;
-			text-align: center;
-			margin-bottom: 1.5rem;
-		}
-		p {
-			font-size: 1.4rem;
-			font-weight: 300;
-			line-height: 2.2rem;
-			color: #ffffff;
-			text-align: center;
-			&:last-child {
-				margin-bottom: 0;
+	#advantageContent {
+		> div > div {
+			> div {
+				margin-top: ($spacer * 3);
+				@include make-col-ready();
+				@include make-col(2.4);
+				@include media-breakpoint-down(md) {
+					@include make-col(4);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(6);
+				}
+				> div {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+					border: 1px solid $aws-squid;
+					padding: 1.5rem;
+					p {
+						text-align: center;
+						font-size: 2.8rem;
+						font-weight: 500;
+						line-height: 3.6rem;
+						color: $aws-squid;
+					}
+					div {
+						text-align: center;
+						font-size: 1.4rem;
+						font-weight: 400;
+						line-height: 2.2rem;
+						color: $aws-squid;
+					}
+				}
 			}
 		}
 	}
-	.saponaws-reasons-cta {
-		text-align: center;
+	#advantageCaption {
+		> div {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.2rem;
+			color: $aws-squid;
+		}
 	}
 }
 
-.saponaws-case-studies {
+.winonaws-why {
+	background-color: $aws-gray-bg;
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+		margin-bottom: 3rem;
+	}
+	.whyVideo {
+		margin-bottom: 3rem;
+		
+	}
+	#whyText {
+		p {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	#whyCards {
+		> div > div {
+			> div {
+				@include make-col-ready();
+				@include make-col(4);
+				@include media-breakpoint-down(md) {
+					@include make-col(6);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(12);
+				}
+				margin-top: ($spacer * 3);
+				> div {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					border-top: 5px solid $aws-squid;
+					padding: 1.5rem;
+					box-shadow: 0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04);
+					background-color: #ffffff;
+					background-image: linear-gradient(0deg,#eaeded 0,#fff);
+					h3 {
+						font-size: 2rem;
+						font-weight: 500;
+						line-height: 3rem;
+						color: $aws-squid;
+						margin: ($spacer * 1.5) 0;
+					}
+					p {
+						&:last-child {
+							font-size: 1.4rem;
+							font-weight: 500;
+							line-height: 2.2rem;
+							color: $aws-squid;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	#whyCaption {
+		> div {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.2rem;
+			color: $aws-squid;
+		}
+	}
+}
+
+.winonaws-popular {
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+		margin-bottom: 3rem;
+	}
+	#popularText {
+		p {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	#popularCards {
+		> div > div {
+			> div {
+				@include make-col-ready();
+				@include make-col(4);
+				@include media-breakpoint-down(md) {
+					@include make-col(6);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(12);
+				}
+				margin-top: ($spacer * 3);
+				> div {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					padding: 1.5rem;
+					figure {
+						margin-bottom: 1.5rem;
+						img {
+							display: block;
+							margin: 0 auto;
+						}
+					}
+					p {
+						&:last-child {
+							font-size: 1.4rem;
+							line-height: 2.2rem;
+							color: $aws-squid;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.winonaws-case-studies {
+	background-color: $aws-gray-bg;
 	h3 {
 		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
 		font-size: 2rem;
@@ -150,10 +282,53 @@
 		color: $aws-squid;
 		margin-bottom: 3rem;
 	}
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+	}
+	#casesVideos {
+		margin-bottom: 3rem;
+		> div > div {
+			> div {
+				@include make-col-ready();
+				@include make-col(4);
+				@include media-breakpoint-down(md) {
+					@include make-col(6);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(12);
+				}
+				margin-top: 3rem;
+				> div {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					box-shadow: 0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04);
+					background: #ffffff;
+					img {
+						@extend .img-fluid;
+					}
+					p {
+						padding: 1.5rem;
+						padding-bottom: 0.5rem;
+					}
+					> a {
+						@extend .stretched-link;
+						padding-right: 1.5rem;
+						padding-bottom: 1.5rem;
+						padding-left: 1.5rem;
+					}
+				}
+			}
+		}
+	}
 	.cases {
+		margin-top: 3rem;
 		@include make-row();
-		padding-top: ($spacer * 3);
-		padding-bottom: ($spacer * 3);
 		+ p {
 			height: 0;
 			margin: 0;
@@ -177,6 +352,7 @@
 			}
 		}
 		.case-content {
+			align-self: center;
 			@include make-col-ready();
 			@include make-col(9);
 			@include media-breakpoint-down(md) {
@@ -223,7 +399,7 @@
 	}
 }
 
-.saponaws-panel {
+.winonaws-panel {
 	background: $aws-squid;
 	h1 {
 		font-size: 4.8rem;
@@ -231,6 +407,14 @@
 		line-height: 6.2rem;
 		color: #ffffff;
 		margin: 0;
+	}
+	h2 {
+		font-size: 2.8rem;
+		font-weight: 400;
+		line-height: 3.6rem;
+		color: $aws-orange;
+		margin-top: ($spacer * 2.5);
+		margin-bottom: 0;
 	}
 	h4 {
 		font-size: 1.8rem;
@@ -240,48 +424,9 @@
 		margin-top: ($spacer * 2.5);
 		margin-bottom: 0;
 	}
-}
-
-.saponaws-additional {
-	h3 {
-		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-		font-size: 2rem;
-		font-weight: 500;
-		line-height: 3rem;
-		color: $aws-squid;
-	}
-	.saponaws-card {
-		@include make-col-ready();
-		@include make-col(6);
-		@include media-breakpoint-down(md) {
-			@include make-col(12);
-		}
-		padding-top: ($spacer * 3);
-		padding-bottom: ($spacer * 3);
+	.winonaws-panel-btt {
 		display: flex;
-		> div {
-			flex: 1;
-			padding: 3rem 1.5rem;
-			border: 1px solid #d5dbdb;
-			figure {
-				margin-bottom: 0;
-			}
-			p {
-				font-size: 1.6rem;
-				font-weight: 300;
-				line-height: 2.2rem;
-				color: $aws-squid;
-				margin-bottom: 2rem;
-				&:last-child {
-					margin-bottom: 0;
-				}
-				strong {
-					font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-				}
-			}
-			> div {
-				margin-top: ($spacer * 2.5);
-			}
-		}
+		justify-content: center;
+		padding-top: ($spacer * 5.5);
 	}
 }

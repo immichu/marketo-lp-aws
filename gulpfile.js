@@ -9,6 +9,7 @@ var fs = require('fs');
 var path = require('path');
 var panini = require("panini");
 var browserSync = require("browser-sync").create();
+var babel = require("gulp-babel");
 
 function bs(done) {
   browserSync.init({
@@ -65,13 +66,15 @@ function copyHTML(done) {
 function copyJS(done) {
 	gulp.src("src/assets/js/*.js")
 		.pipe(sourcemaps.init())
+		.pipe(babel())
 		.pipe(order([
 			'jquery.min.js',
-			'bootstrap.bundle.min.js',
-			'sap-on-aws.js'
+			'popper.min.js',
+			'bootstrap.min.js',
+			'scripts.js'
 		]))
-		.pipe(concat('sap-on-aws.js'))
-		.pipe(uglify())
+		.pipe(concat('win-on-aws.js'))
+		// .pipe(uglify())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest("dist/js"))
 		.pipe(browserSync.stream());

@@ -7,6 +7,7 @@
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/images";
 
 @include media-breakpoint-up(md) {
 	body {
@@ -14,14 +15,23 @@
 	}
 }
 
+.col-lg-2-4{
+  @include make-col(2.4)
+}
+.col-md-2-4{
+  @include make-col(2.4)
+}
+.col-sm-2-4{
+  @include make-col(2.4)
+}
+
 #aws-page-footer {
 	margin-top: 0;
 }
 
-.saponaws {
+.winonaws {
 	* {
 		font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif;
-		position: relative;
 	}
 	.container .row {
 		margin: unset;

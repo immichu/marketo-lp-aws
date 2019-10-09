@@ -1169,7 +1169,7 @@ button.bg-aws-orange:focus {
 .vh-100 {
   height: 100vh !important; }
 
-.stretched-link::after {
+.stretched-link::after, .winonaws .winonaws-case-studies #casesVideos > div > div > div > div > a::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -6683,21 +6683,55 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+.img-fluid, .winonaws .winonaws-case-studies #casesVideos > div > div > div > div img {
+  max-width: 100%;
+  height: auto; }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; }
+
+.figure {
+  display: inline-block; }
+
+.figure-img {
+  margin-bottom: 0.5rem;
+  line-height: 1; }
+
+.figure-caption {
+  font-size: 90%;
+  color: #6c757d; }
+
 @media (min-width: 769px) {
   body {
     padding-top: 68px; } }
 
+.col-lg-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+.col-md-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%; }
+
+.col-sm-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%; }
+
 #aws-page-footer {
   margin-top: 0; }
 
-.saponaws * {
-  font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif;
-  position: relative; }
+.winonaws * {
+  font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif; }
 
-.saponaws .container .row {
+.winonaws .container .row {
   margin: unset; }
 
-.saponaws .btn {
+.winonaws .btn {
   display: inline-block;
   min-width: 25rem;
   padding: 0.7rem 1.6rem;
@@ -6710,43 +6744,43 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
   text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
   color: #333; }
-  .saponaws .btn:visited {
+  .winonaws .btn:visited {
     color: #333; }
-  .saponaws .btn.btn-primary {
+  .winonaws .btn.btn-primary {
     border-color: #be952c #a68226 #9b7924;
     background-color: #eeba37;
     background-image: linear-gradient(180deg, #fee6b0 0, #eeba37); }
-    .saponaws .btn.btn-primary:hover {
+    .winonaws .btn.btn-primary:hover {
       border-color: #a98527 #917221 #86691f;
       background-image: linear-gradient(180deg, #fede97 0, #ecb21f); }
-  .saponaws .btn.btn-secondary {
+  .winonaws .btn.btn-secondary {
     border-color: #d5dbdb;
     background-color: #fafafa;
     background-image: linear-gradient(180deg, #fafafa 0, #eaeded); }
-    .saponaws .btn.btn-secondary:hover {
+    .winonaws .btn.btn-secondary:hover {
       border-color: #c6cccc;
       background-color: #e0e3e3;
       background-image: linear-gradient(180deg, #f5f5f5 0, #e0e3e3); }
-  .saponaws .btn:hover {
+  .winonaws .btn:hover {
     text-decoration: none;
     color: #333; }
 
-.saponaws .saponaws-hero {
+.winonaws .winonaws-hero {
   background: center center/cover no-repeat #232F3E; }
-  .saponaws .saponaws-hero h1 {
+  .winonaws .winonaws-hero h1 {
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 6.2rem;
     color: #ffffff;
     margin: 0; }
-  .saponaws .saponaws-hero h4 {
+  .winonaws .winonaws-hero h4 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.7rem;
     color: #ffffff;
     margin-top: 2.5rem;
     margin-bottom: 0; }
-  .saponaws .saponaws-hero a {
+  .winonaws .winonaws-hero a {
     display: inline-block;
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 2.4rem;
@@ -6754,42 +6788,42 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
     line-height: 3.1rem;
     color: #ffffff;
     margin-top: 4.5rem; }
-  .saponaws .saponaws-hero .saponaws-hero-image {
+  .winonaws .winonaws-hero .winonaws-hero-image {
     display: flex; }
 
-.saponaws .saponaws-navlinks {
+.winonaws .winonaws-navlinks {
   background: #f2f4f4; }
-  .saponaws .saponaws-navlinks nav ul {
+  .winonaws .winonaws-navlinks nav ul {
     display: flex;
     margin: 0;
     list-style-type: none;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
     @media (max-width: 1199.98px) {
-      .saponaws .saponaws-navlinks nav ul {
+      .winonaws .winonaws-navlinks nav ul {
         flex-direction: column; } }
-    .saponaws .saponaws-navlinks nav ul li {
+    .winonaws .winonaws-navlinks nav ul li {
       margin-right: 4.5rem;
       padding: 0.3rem 0; }
       @media (max-width: 979.98px) {
-        .saponaws .saponaws-navlinks nav ul li {
+        .winonaws .winonaws-navlinks nav ul li {
           margin-right: 0; } }
-      .saponaws .saponaws-navlinks nav ul li a {
+      .winonaws .winonaws-navlinks nav ul li a {
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 2.2rem;
         color: #232F3E; }
-  .saponaws .saponaws-navlinks.sticky {
+  .winonaws .winonaws-navlinks.sticky {
     position: fixed;
     position: sticky;
     top: 68px;
     width: 100%;
     z-index: 1; }
     @media (max-width: 768.98px) {
-      .saponaws .saponaws-navlinks.sticky {
+      .winonaws .winonaws-navlinks.sticky {
         top: 0px; } }
 
-.saponaws .saponaws-lead h3 {
+.winonaws .winonaws-lead h3 {
   font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 2rem;
   font-weight: 500;
@@ -6797,200 +6831,309 @@ a.text-aws-orange:hover, a.text-aws-orange:focus {
   color: #232F3E;
   margin-bottom: 1.5rem; }
 
-.saponaws .saponaws-lead p {
+.winonaws .winonaws-lead p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.5rem;
   color: #232F3E; }
-  .saponaws .saponaws-lead p:last-child {
+  .winonaws .winonaws-lead p:last-child {
     margin-bottom: 0; }
 
-.saponaws .saponaws-reasons {
-  background: #232F3E; }
-  .saponaws .saponaws-reasons .saponaws-reasons-title h3 {
+.winonaws .winonaws-advantage h2 {
+  font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 3.6rem;
+  color: #232F3E;
+  margin-bottom: 0; }
+
+.winonaws .winonaws-advantage #advantageContent > div > div > div {
+  margin-top: 3rem;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 20%;
+  max-width: 20%; }
+  @media (max-width: 979.98px) {
+    .winonaws .winonaws-advantage #advantageContent > div > div > div {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%; } }
+  @media (max-width: 768.98px) {
+    .winonaws .winonaws-advantage #advantageContent > div > div > div {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  .winonaws .winonaws-advantage #advantageContent > div > div > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid #232F3E;
+    padding: 1.5rem; }
+    .winonaws .winonaws-advantage #advantageContent > div > div > div > div p {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 500;
+      line-height: 3.6rem;
+      color: #232F3E; }
+    .winonaws .winonaws-advantage #advantageContent > div > div > div > div div {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.2rem;
+      color: #232F3E; }
+
+.winonaws .winonaws-advantage #advantageCaption > div {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  color: #232F3E; }
+
+.winonaws .winonaws-why {
+  background-color: #FAFAFA; }
+  .winonaws .winonaws-why h2 {
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 500;
-    line-height: 3rem;
-    color: #ffffff;
-    text-align: center; }
-  .saponaws .saponaws-reasons .saponaws-reasons-block {
+    line-height: 3.6rem;
+    color: #232F3E;
+    margin-bottom: 3rem; }
+  .winonaws .winonaws-why #whyText p:last-child {
+    margin: 0; }
+  .winonaws .winonaws-why #whyCards > div > div > div {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     flex: 0 0 33.33333%;
-    max-width: 33.33333%; }
+    max-width: 33.33333%;
+    margin-top: 3rem; }
     @media (max-width: 979.98px) {
-      .saponaws .saponaws-reasons .saponaws-reasons-block {
+      .winonaws .winonaws-why #whyCards > div > div > div {
         flex: 0 0 50%;
         max-width: 50%; } }
     @media (max-width: 768.98px) {
-      .saponaws .saponaws-reasons .saponaws-reasons-block {
+      .winonaws .winonaws-why #whyCards > div > div > div {
         flex: 0 0 100%;
         max-width: 100%; } }
-    .saponaws .saponaws-reasons .saponaws-reasons-block > div {
-      padding: 2rem; }
-    .saponaws .saponaws-reasons .saponaws-reasons-block figure {
-      text-align: center;
-      margin-bottom: 1.5rem; }
-    .saponaws .saponaws-reasons .saponaws-reasons-block h4 {
-      font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-      font-size: 1.8rem;
-      font-weight: 500;
-      line-height: 2.7rem;
-      color: #ffffff;
-      text-align: center;
-      margin-bottom: 1.5rem; }
-    .saponaws .saponaws-reasons .saponaws-reasons-block p {
-      font-size: 1.4rem;
-      font-weight: 300;
-      line-height: 2.2rem;
-      color: #ffffff;
-      text-align: center; }
-      .saponaws .saponaws-reasons .saponaws-reasons-block p:last-child {
-        margin-bottom: 0; }
-  .saponaws .saponaws-reasons .saponaws-reasons-cta {
-    text-align: center; }
+    .winonaws .winonaws-why #whyCards > div > div > div > div {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      border-top: 5px solid #232F3E;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
+      background-color: #ffffff;
+      background-image: linear-gradient(0deg, #eaeded 0, #fff); }
+      .winonaws .winonaws-why #whyCards > div > div > div > div h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem;
+        color: #232F3E;
+        margin: 1.5rem 0; }
+      .winonaws .winonaws-why #whyCards > div > div > div > div p:last-child {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        color: #232F3E;
+        margin: 0; }
+  .winonaws .winonaws-why #whyCaption > div {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    color: #232F3E; }
 
-.saponaws .saponaws-case-studies h3 {
+.winonaws .winonaws-popular h2 {
   font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 3.6rem;
   color: #232F3E;
   margin-bottom: 3rem; }
 
-.saponaws .saponaws-case-studies .cases {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-  .saponaws .saponaws-case-studies .cases + p {
-    height: 0;
-    margin: 0; }
-  .saponaws .saponaws-case-studies .cases .case-image {
-    margin-bottom: 0;
+.winonaws .winonaws-popular #popularText p:last-child {
+  margin: 0; }
+
+.winonaws .winonaws-popular #popularCards > div > div > div {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  margin-top: 3rem; }
+  @media (max-width: 979.98px) {
+    .winonaws .winonaws-popular #popularCards > div > div > div {
+      flex: 0 0 50%;
+      max-width: 50%; } }
+  @media (max-width: 768.98px) {
+    .winonaws .winonaws-popular #popularCards > div > div > div {
+      flex: 0 0 100%;
+      max-width: 100%; } }
+  .winonaws .winonaws-popular #popularCards > div > div > div > div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    flex: 0 0 25%;
-    max-width: 25%; }
-    @media (max-width: 979.98px) {
-      .saponaws .saponaws-case-studies .cases .case-image {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-        margin-bottom: 3rem; } }
-    @media (max-width: 768.98px) {
-      .saponaws .saponaws-case-studies .cases .case-image {
-        flex: 0 0 100%;
-        max-width: 100%; } }
-    .saponaws .saponaws-case-studies .cases .case-image figure {
-      margin-bottom: 0; }
-  .saponaws .saponaws-case-studies .cases .case-content {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    flex: 0 0 75%;
-    max-width: 75%; }
-    @media (max-width: 979.98px) {
-      .saponaws .saponaws-case-studies .cases .case-content {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%; } }
-    @media (max-width: 768.98px) {
-      .saponaws .saponaws-case-studies .cases .case-content {
-        flex: 0 0 100%;
-        max-width: 100%; } }
-    .saponaws .saponaws-case-studies .cases .case-content p {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 2.5rem;
-      color: #232F3E; }
-      .saponaws .saponaws-case-studies .cases .case-content p:last-child {
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem; }
+    .winonaws .winonaws-popular #popularCards > div > div > div > div figure {
+      margin-bottom: 1.5rem; }
+      .winonaws .winonaws-popular #popularCards > div > div > div > div figure img {
+        display: block;
+        margin: 0 auto; }
+    .winonaws .winonaws-popular #popularCards > div > div > div > div p:last-child {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      color: #232F3E;
+      margin: 0; }
+
+.winonaws .winonaws-case-studies {
+  background-color: #FAFAFA; }
+  .winonaws .winonaws-case-studies h3 {
+    font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3rem;
+    color: #232F3E;
+    margin-bottom: 3rem; }
+  .winonaws .winonaws-case-studies h2 {
+    font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 3.6rem;
+    color: #232F3E; }
+  .winonaws .winonaws-case-studies #casesVideos {
+    margin-bottom: 3rem; }
+    .winonaws .winonaws-case-studies #casesVideos > div > div > div {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      margin-top: 3rem; }
+      @media (max-width: 979.98px) {
+        .winonaws .winonaws-case-studies #casesVideos > div > div > div {
+          flex: 0 0 50%;
+          max-width: 50%; } }
+      @media (max-width: 768.98px) {
+        .winonaws .winonaws-case-studies #casesVideos > div > div > div {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      .winonaws .winonaws-case-studies #casesVideos > div > div > div > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
+        background: #ffffff; }
+        .winonaws .winonaws-case-studies #casesVideos > div > div > div > div p {
+          padding: 1.5rem;
+          padding-bottom: 0.5rem; }
+        .winonaws .winonaws-case-studies #casesVideos > div > div > div > div > a {
+          padding-right: 1.5rem;
+          padding-bottom: 1.5rem;
+          padding-left: 1.5rem; }
+  .winonaws .winonaws-case-studies .cases {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .winonaws .winonaws-case-studies .cases + p {
+      height: 0;
+      margin: 0; }
+    .winonaws .winonaws-case-studies .cases .case-image {
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 25%;
+      max-width: 25%; }
+      @media (max-width: 979.98px) {
+        .winonaws .winonaws-case-studies .cases .case-image {
+          flex: 0 0 33.33333%;
+          max-width: 33.33333%;
+          margin-bottom: 3rem; } }
+      @media (max-width: 768.98px) {
+        .winonaws .winonaws-case-studies .cases .case-image {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      .winonaws .winonaws-case-studies .cases .case-image figure {
         margin-bottom: 0; }
-      .saponaws .saponaws-case-studies .cases .case-content p strong {
-        font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
-    .saponaws .saponaws-case-studies .cases .case-content a {
-      font-size: 1.6rem;
-      font-weight: 400;
-      line-height: 2.5rem; }
+    .winonaws .winonaws-case-studies .cases .case-content {
+      align-self: center;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      flex: 0 0 75%;
+      max-width: 75%; }
+      @media (max-width: 979.98px) {
+        .winonaws .winonaws-case-studies .cases .case-content {
+          flex: 0 0 66.66667%;
+          max-width: 66.66667%; } }
+      @media (max-width: 768.98px) {
+        .winonaws .winonaws-case-studies .cases .case-content {
+          flex: 0 0 100%;
+          max-width: 100%; } }
+      .winonaws .winonaws-case-studies .cases .case-content p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        color: #232F3E; }
+        .winonaws .winonaws-case-studies .cases .case-content p:last-child {
+          margin-bottom: 0; }
+        .winonaws .winonaws-case-studies .cases .case-content p strong {
+          font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
+      .winonaws .winonaws-case-studies .cases .case-content a {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.5rem; }
+  .winonaws .winonaws-case-studies p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #232F3E; }
+    .winonaws .winonaws-case-studies p:last-child {
+      margin-bottom: 0; }
+    .winonaws .winonaws-case-studies p strong {
+      font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
+  .winonaws .winonaws-case-studies a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem; }
 
-.saponaws .saponaws-case-studies p {
-  font-size: 1.6rem;
-  font-weight: 300;
-  line-height: 2.5rem;
-  color: #232F3E; }
-  .saponaws .saponaws-case-studies p:last-child {
-    margin-bottom: 0; }
-  .saponaws .saponaws-case-studies p strong {
-    font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
-
-.saponaws .saponaws-case-studies a {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 2.5rem; }
-
-.saponaws .saponaws-panel {
+.winonaws .winonaws-panel {
   background: #232F3E; }
-  .saponaws .saponaws-panel h1 {
+  .winonaws .winonaws-panel h1 {
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 6.2rem;
     color: #ffffff;
     margin: 0; }
-  .saponaws .saponaws-panel h4 {
+  .winonaws .winonaws-panel h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    color: #ff9900;
+    margin-top: 2.5rem;
+    margin-bottom: 0; }
+  .winonaws .winonaws-panel h4 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.7rem;
     color: #ffffff;
     margin-top: 2.5rem;
     margin-bottom: 0; }
+  .winonaws .winonaws-panel .winonaws-panel-btt {
+    display: flex;
+    justify-content: center;
+    padding-top: 5.5rem; }
 
-.saponaws .saponaws-additional h3 {
-  font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
-  font-size: 2rem;
-  font-weight: 500;
-  line-height: 3rem;
-  color: #232F3E; }
-
-.saponaws .saponaws-additional .saponaws-card {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex; }
-  @media (max-width: 979.98px) {
-    .saponaws .saponaws-additional .saponaws-card {
-      flex: 0 0 100%;
-      max-width: 100%; } }
-  .saponaws .saponaws-additional .saponaws-card > div {
-    flex: 1;
-    padding: 3rem 1.5rem;
-    border: 1px solid #d5dbdb; }
-    .saponaws .saponaws-additional .saponaws-card > div figure {
-      margin-bottom: 0; }
-    .saponaws .saponaws-additional .saponaws-card > div p {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 2.2rem;
-      color: #232F3E;
-      margin-bottom: 2rem; }
-      .saponaws .saponaws-additional .saponaws-card > div p:last-child {
-        margin-bottom: 0; }
-      .saponaws .saponaws-additional .saponaws-card > div p strong {
-        font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
-    .saponaws .saponaws-additional .saponaws-card > div > div {
-      margin-top: 2.5rem; }
-
-/*# sourceMappingURL=sap-on-aws.css.map */
+/*# sourceMappingURL=win-on-aws.css.map */

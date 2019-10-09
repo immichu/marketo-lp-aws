@@ -22,14 +22,21 @@ Amazon Web Services
 <meta class="mktoString" id="socialImage" mktoName="Social Media Image" default="https://a0.awsstatic.com/main/images/open-graph/opengraph.gif" allowHtml="false">
 <meta class="mktoString" id="heroBackground" mktoName="Hero Background" default="https://pages.awscloud.com/rs/112-TZM-766/images/wind-turbine-wide-engie-hero-2000x650.jpg" allowHtml="false">
 
+<meta class="mktoString" id="heroBackground" mktoName="Video URL" default="https://pages.awscloud.com/rs/112-TZM-766/images/wind-turbine-wide-engie-hero-2000x650.jpg" allowHtml="false">
+
 <meta class="mktoBoolean" id="heroDisplay" mktoName="Hero Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="heroHasImage" mktoName="Hero Has Image" default="false" true_value="flex" false_value="none" false_value_name="No" true_value_name="Yes">
 <meta class="mktoBoolean" id="navlinksDisplay" mktoName="Subnavigation Links Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="leadDisplay" mktoName="Lead Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
-<meta class="mktoBoolean" id="reasonsDisplay" mktoName="Reasons Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="advantageDisplay" mktoName="Advantage Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="whyDisplay" mktoName="Why Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+
+<meta class="mktoBoolean" id="whyDisplayVideo" mktoName="Why Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+
+<meta class="mktoBoolean" id="popularDisplay" mktoName="Popular Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="casesDisplay" mktoName="Case Studies Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="panelDisplay" mktoName="Panel Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
-<meta class="mktoBoolean" id="additionalDisplay" mktoName="Additional Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="panelBttDisplay" mktoName="Panel Back to Top" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 
 <meta charset="utf-8">
 <title>${title}</title>
@@ -3605,7 +3612,7 @@ window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){va
 <!-- Header Content -->
 
 <!-- Main Content -->
-<main class="saponaws">
+<main id="pageTop" class="{{bodyClass}}">
 	{{> body}}
 </main>
 <!-- Main Content -->
@@ -3804,6 +3811,12 @@ window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){va
 </div>
 <!-- Footer Content -->
 
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="{{javascript}}"></script>
 
 <!-- Twitter Pixel -->
@@ -3829,26 +3842,36 @@ s.parentNode.insertBefore(b, s);})();
 var items = $('.wbn-multi-list');
 items.sort(function(a, b){
     return +$(a).data('time') - +$(b).data('time');
-}); 
+}); s
 items.appendTo('#wbnMultiSesCont');
 </script> 
 
 <div id="aws-page-end"></div>
-<script>require(['jquery', 'scripts']);</script> 
+<!-- <script>require(['jquery', 'scripts']);</script>  -->
 <script src="https://a0.awsstatic.com/da/js/1.0.12/aws-da.js"></script> 
-<!-- SiteCatalyst code version: H.25.1. Copyright 1996-2012 Adobe, Inc. All Rights Reserved --> 
-<script><!--
+<!-- SiteCatalyst code version: H.26. Copyright 1996-2012 Adobe, Inc. All Rights Reserved More info available at http://www.omniture.com -->
+<script src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script>
+<script src="https://a0.awsstatic.com/pre-offer/1/content/sitePriv/main.js" async></script>
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
 /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-var s_code=s.t();if(s_code)document.write(s_code)
-//--></script> 
-<script language="JavaScript" type="text/javascript"><!--
+var s_code=s.t();if(s_code)document.write(s_code)//-->
+//]]>
+</script>
+
+<script language="JavaScript" type="text/javascript">
+//<![CDATA[
+<!--
 if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
-//--></script> 
-<noscript> 
-<img src="//amazonwebservices.d2.sc.omtrdc.net/b/ss/awsamazonalldev2/1/H.25.1--NS/0" height="1" width="1" border="0" alt="" /> 
-</noscript> 
-<!--/DO NOT REMOVE/--> 
-<!-- End SiteCatalyst code version: H.25.1. -->
+//-->
+//]]>
+</script>
+<noscript>
+<img alt="" border="0" height="1" src="//amazonwebservices.d2.sc.omtrdc.net/b/ss/awsamazondev/1/H.25.1--NS/0"
+width="1" />
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/952612511/?guid=ON&amp;script=0"/>
+</noscript><!--/DO NOT REMOVE/ -->
+<!-- End SiteCatalyst code version: H.26. -->
 
 <div class="mktoContent"></div>
 {{{{raw}}}}

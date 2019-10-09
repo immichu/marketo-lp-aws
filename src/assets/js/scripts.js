@@ -1,7 +1,7 @@
 window.onscroll = function () {
 	stickyNav()
 };
-var navlinks = document.querySelector(".saponaws-navlinks");
+var navlinks = document.querySelector(".winonaws-navlinks");
 var sticky = navlinks.offsetTop;
 var tOffset = window.innerWidth > 768 ? 68 : 50;
 function stickyNav() {
