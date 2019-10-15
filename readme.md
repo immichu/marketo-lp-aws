@@ -2,9 +2,9 @@
 
 `npm install`
 
-`npm start` To run dev (allows you to render markup that should be missing from Production)
+`npm start` To run dev (allows you to render markup that should be missing from Production), sets NODE_ENV='development'
 
-`npm run build` To run production (preview of page will look bad but only becaause some maarkup won't be generated as you will need to manually add this in to marketo's landing page under marketing activities in the WYSIWYG, more on this later.)
+`npm run build` To run production (preview of page will look bad but only becaause some maarkup won't be generated as you will need to manually add this in to marketo's landing page under marketing activities in the WYSIWYG, more on this later.), sets NODE_ENV='production'
 
 ## Overview of the project
 
@@ -13,9 +13,17 @@ This project is a flat file compiler project using panini to create AWS landing 
 You will have a few main folders you will work in:
 
 - **./src/pages/pages**
-  - Here you will create a new `.html` file that will contain the components of the page you will build, the contents of this file get injected in the `{{> body}}` tag in the layout template. 
+  - Here you will create a new `.html` file that will contain the components of the page you will build, the contents of this file get injected in the `{{> body}}` tag in the layout template. At the top of pages, we also declare 'front matter' variables to declare the live src for the css and javascript on Marketo. Note that these src's will only be injected into the template when NODE_ENV='production', it will instead use `../css/{{pageName}}.css` and `../js/main-on-aws.js`. Please grab the urls for the live css and js after you have uploaded your compiled files to Marketo.
+  - 
+	```
+	---
+	pageName: win-on-aws
+	stylesheet: https://pages.awscloud.com/rs/112-TZM-766/images/win-on-aws.css
+	javascript: https://pages.awscloud.com/rs/112-TZM-766/images/main-on-aws.js
+	---
+	```
 - **./src/layouts**
-  - Here is where you will create a boiler plate that contains `{{> body}}` and any other variables or partials you create to act as a template for your pages. All pages you make will use the 'default' template by... default lol, but if you wish to use an alternate template then in your pages, use frontmatter at the very top of yout page to declare a layout variable with the value equal to the file name of the html layout (minus the .ext). Below is an example of front matter:
+  - Here is where you will create a boiler plate that contains `{{> body}}` and any other variables or partials you create to act as a template for your pages. All pages you make will use the 'default' template by... default lol, but if you wish to use an alternate template then in your pages, use frontmatter at the very top of yout page to declare a layout variable with the value equal to the file name of the html layout (minus the .ext). Below is an example of front matter in a 'page' file declaring the layout template to use:
   - 
 	```
 	---
@@ -88,6 +96,10 @@ some-var
 <!-- End instead -->
 ```
 
+## Key info for Marketo templates
+
+To make sure your guided landing page is editable within the platform itself, you must use some Marketo specific `meta` tags and use some Marketo conventions. All are pretty easy to grasp and is well documented here: [Create a Guided Landing Page Template](https://docs.marketo.com/display/public/DOCS/Create+a+Guided+Landing+Page+Template "^^b")
+
 ## The outputs
 
 So after being happy with your page, you can run `npm run build` and the output will be in the `dist` folder, you will now need to upload your css/js file (named same as your page) to Marketo, in Design Studio => Images and Files => Other => css/js (respectively). your page will be in `dist/pages` and you should copy the html contents of the page into a new `landing page template` that you can create from Marketo as follows:
@@ -99,4 +111,6 @@ So after being happy with your page, you can run `npm run build` and the output 
   - [IN DEVELOPMENT] !AWS - {{your-page-name}} - Responsive & Tokenized LP
   - Guided
   - {{any-desc-you-like-or-none}}
+
+## Post build (new program and tokenisation)
 
