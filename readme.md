@@ -142,3 +142,7 @@ The final things you will have to do is first, click the program and then goto t
 Next, click the landing page in the program that you made, then edit draft. this will open a new page that will let you edit any of the booleans, strings, and editable areas. Replace content in all these areas and string fields with tokens that you just made (NOTE: here is where Marketo will add a <div> around your tokens in the rich text editor, sometimes this is fine, sometimes note, test to find out). select the booleans you require and the page will auto save. now you can go back to your landing page in marketing activities and preview.
 
 If all content is placed in the tokens and you build your page to take into account for the extra divs Marketo adds, then you should be good to go. Bear in mind any change you need to make to the landing page in Design Studio, will need to be reapproved. so ping me again ^^b
+
+## Note
+
+If you want to look at example code to help you build, look at all the files for `win-on-aws.html` and respective files (all pages use same script file). This is because some time ago, the original src for `sap-on-aws.scss` was lost, the live, compiled version of this file is still available on Marketo though.  
