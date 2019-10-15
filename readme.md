@@ -155,4 +155,6 @@ If all content is placed in the tokens and you build your page to take into acco
 
 ## Note
 
+Important to note is that we are just one small folder in AWS's entire marketo instance, anything we make will need to have unique names like our programs/templates etc. this is because not two programs/templates(probably more other things too) can exist twice with the same name, regardless of folder, so care when naaming files, don't get lazy and use the naming schemes i've outlined above.
+
 If you want to look at example code to help you build, look at all the files for `win-on-aws.html` and respective files (all pages use same script file). This is because some time ago, the original src for `sap-on-aws.scss` was lost, the live, compiled version of this file is still available on Marketo though.  
