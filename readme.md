@@ -1,6 +1,5 @@
 # Contents
 
-- [Contents](#contents)
 	- [Install & use](#install--use)
 	- [Overview of the project](#overview-of-the-project)
 	- [The helpers and why we need them](#the-helpers-and-why-we-need-them)
