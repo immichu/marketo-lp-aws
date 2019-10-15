@@ -23,7 +23,23 @@ You will have a few main folders you will work in:
 	layout: another-template
 	---
 	```
-  - note that the 'var' in the example can be used in your page or bubble up to the template file and it's values will always be parsed as a string (no quote marks are needed)
+  - Note that the 'var' in the example can be used as `{{var}}` in your page or bubble up to the template file and it's values will always be parsed as a string (no quote marks are needed)
+- ./src/partials
+  - While partials are currently not being used, you may if you want, create a html file in the partials folder, usual practice is to name it `_partial-name.html` (underscore to denote it is a partial and not just a mere variable). the to use it in a page or template: `{{> _partial-name}}`
+  - Note that you may also pass 'props' to the partial, let's say your partial is a button, see below example:
+	-
+	```
+	<!-- partial filename is _button.html -->
+	<button>{{name}}</button>
+
+	<!-- usage in a template/page -->
+	{{> _button.html
+		name = "hello"
+	}}
+
+	<!-- outputs -->
+	<button>hello</button>
+	```
 
 
 
