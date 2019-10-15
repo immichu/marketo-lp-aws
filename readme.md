@@ -43,3 +43,6 @@ You will have a few main folders you will work in:
 	<button>hello</button>
 	<!-- End output -->
 	```
+	- ./src/assets/js & ./src/assets/sass
+  	- Here you will find the source files for JavaScript and SASS
+  	- The JavaScript on the template that we were provided by AWS contains many, many scripts, some compiled with libraries and some duplicated libraries of different versions... (indeed, a mess) but we must leave these alone ere we chance certain functionalities in their analytics/navigation/footer breaking. This unfortunately also means that libraries like bootstrap.js are really buggy and probably others too. I have only found success in using vanilla javascript and jquery and as such, it's probaably best to stick with these and add to the `scripts.js`
