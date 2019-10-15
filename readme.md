@@ -1,7 +1,5 @@
-# Contents
-
 | Contents |
-|:--------:|
+|----------|
 |[Install & use](#install--use)|
 |[Overview of the project](#overview-of-the-project)|
 |[The helpers and why we need them](#the-helpers-and-why-we-need-them)|
@@ -10,7 +8,7 @@
 |[Post build (new program and tokenisation)](#post-build-new-program-and-tokenisation)|
 |[Note](#note)|
 
-## Install & use
+# Install & use
 
 `npm install`
 
