@@ -1,4 +1,5 @@
-| Contents |
+# Contents
+
 |----------|
 |[Install & use](#install--use)|
 |[Overview of the project](#overview-of-the-project)|
@@ -8,7 +9,7 @@
 |[Post build (new program and tokenisation)](#post-build-new-program-and-tokenisation)|
 |[Note](#note)|
 
-# Install & use
+## Install & use
 
 `npm install`
 
