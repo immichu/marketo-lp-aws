@@ -35,7 +35,7 @@ You will have a few main folders you will work in:
 
 	<!-- Usage in a template/page -->
 	{{> _button.html
-		name = "hello"
+	  name = "hello"
 	}}
 	<!-- End usage -->
 
