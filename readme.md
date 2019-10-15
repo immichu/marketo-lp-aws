@@ -1,11 +1,12 @@
-- Contents
-	- [Install & use](#install--use)
-	- [Overview of the project](#overview-of-the-project)
-	- [The helpers and why we need them](#the-helpers-and-why-we-need-them)
-	- [Key info for Marketo templates](#key-info-for-marketo-templates)
-	- [The outputs](#the-outputs)
-	- [Post build (new program and tokenisation)](#post-build-new-program-and-tokenisation)
-	- [Note](#note)
+# Contents
+  
+[Install & use](#install--use)
+[Overview of the project](#overview-of-the-project)
+[The helpers and why we need them](#the-helpers-and-why-we-need-them)
+[Key info for Marketo templates](#key-info-for-marketo-templates)
+[The outputs](#the-outputs)
+[Post build (new program and tokenisation)](#post-build-new-program-and-tokenisation)
+[Note](#note)
 
 ## Install & use
 
