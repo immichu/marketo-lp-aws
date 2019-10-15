@@ -47,3 +47,43 @@ You will have a few main folders you will work in:
   - Here you will find the source files for JavaScript and SASS
   - The JavaScript on the template that we were provided by AWS contains many, many scripts, some compiled with libraries and some duplicated libraries of different versions... (indeed, a mess) but we must leave these alone ere we chance certain functionalities in their analytics/navigation/footer breaking. This unfortunately also means that libraries like bootstrap.js are really buggy and probably others too. I have only found success in using vanilla javascript and jquery and as such, it's probaably best to stick with these and add to the `scripts.js`
   - The SASS folder contains 3 types of files, A 'page' SASS file (i.e. `win-on-aws.scss`) which imports bootstrap css, does some global modifications like adding in aws buttons and also imports our custom styles, namespaced. When you create a new page, create a copy of this file (make modifications if you need like importing the correct respective `custom-xxx.scss` file) and name it the same as your page. The other file you will see is `_vars.scss` this is the file where you would copy over any variable from bootstrap variables file and modify, removing the `!default` afterwords too. Variables in this file will overwrite the bootstrap ones. And finaly we have the `custom-xxx.scss` files, these are where you will put any SASS for the components you will develop.
+
+## The helpers and why we need them
+
+You will come across a helpers folder in the project, they contain 2 files, one called `prod.js` and one called `raw.js`. The prod.js file allows you to return a boolean of true or false depending on the node enviroment. in normal development mode (`npm start`), the NODE_ENV is set to 'development' returning a false value and in  production (`npm run build`), it is set to 'production' returning a true value. this allows you to hide and show content based on the enviroment if you combine with panini's/handlebars built in helpers `{{#if}}` and `{{#ifequal}}` like so:
+
+```
+{{#if (prod) }}
+Shows only when in NODE_ENV='production'
+{{/if}}
+
+{{#ifequal (prod) false }}
+Shows only when in NODE_ENV='development'
+{{else}}
+Shows only when in NODE_ENV='production'
+{{/ifequal}}
+```
+
+This is useful for us as when we add a template to Marketo, unfortunately AWS admins never checked the option to stop the WYSIWYG editor from adding container divs around your code, therefore at times when you need to add in repeatable content that is only repeatable through markup in the WYSIWYG editor on Marketo, then know that that content is inside another div which will probably screw your styles. therefore, style your components with the extra div and in your code, only show that div in development mode via wrapping with `{{#ifequal (prod) false }}`. this way, you can test and preview locally with identical markup as it will be on live. Identifying these div's will be annoying at first no doubt... but good luck ^^b
+
+The second helper `raw.js` is used for when you waant to add handlebars parameters for the platform you are coding for but don't want them parsed by your own project. for example:
+
+```
+<!-- Input -->
+---
+var: some-var
+---
+
+{{{{raw}}}}
+{{var}}
+{{{{/raw}}}}
+<!-- End input -->
+
+<!-- Outputs -->
+{{var}}
+<!-- End output -->
+
+<!-- Instead of -->
+some-var
+<!-- End instead -->
+```
