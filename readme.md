@@ -12,9 +12,9 @@ This project is a flat file compiler project using panini to create AAWS landing
 
 You will have a few main folders you will work in:
 
-- ./src/pages/pages
+- **./src/pages/pages**
   - Here you will create a new `.html` file that will contain the components of the page you will build, the contents of this file get injected in the `{{> body}}` tag in the layout template. 
-- ./src/layouts
+- **./src/layouts**
   - Here is where you will create a boiler plate that contains `{{> body}}` and any other variables or partials you create to act as a template for your pages. All pages you make will use the 'default' template by... default lol, but if you wish to use an alternate template then in your pages, use frontmatter at the very top of yout page to declare a layout variable with the value equal to the file name of the html layout (minus the .ext). Below is an example of front matter:
   - 
 	```
@@ -24,7 +24,7 @@ You will have a few main folders you will work in:
 	---
 	```
   - Note that the 'var' in the example can be used as `{{var}}` in your page or bubble up to the template file and it's values will always be parsed as a string (no quote marks are needed)
-- ./src/partials
+- **./src/partials**
   - While partials are currently not being used, you may if you want, create a html file in the partials folder, usual practice is to name it `_partial-name.html` (underscore to denote it is a partial and not just a mere variable). then to use it in a page or template: `{{> _partial-name}}`.
   - Note that you may also pass 'props' to the partial, let's say your partial is a button, see below example:
   - 
@@ -43,6 +43,7 @@ You will have a few main folders you will work in:
 	<button>hello</button>
 	<!-- End output -->
 	```
-- ./src/assets/js & ./src/assets/sass
+- **./src/assets/js & ./src/assets/sass**
   - Here you will find the source files for JavaScript and SASS
   - The JavaScript on the template that we were provided by AWS contains many, many scripts, some compiled with libraries and some duplicated libraries of different versions... (indeed, a mess) but we must leave these alone ere we chance certain functionalities in their analytics/navigation/footer breaking. This unfortunately also means that libraries like bootstrap.js are really buggy and probably others too. I have only found success in using vanilla javascript and jquery and as such, it's probaably best to stick with these and add to the `scripts.js`
+  - The SASS folder contains 3 types of files, A 'page' SASS file (i.e. `win-on-aws.scss`) which imports bootstrap css, does some global modifications like adding in aws buttons and also imports our custom styles, namespaced. When you create a new page, create a copy of this file (make modifications if you need like importing the correct respective `custom-xxx.scss` file) and name it the same as your page. The other file you will see is `_vars.scss` this is the file where you would copy over any variable from bootstrap variables file and modify, removing the `!default` afterwords too. Variables in this file will overwrite the bootstrap ones. And finaly we have the `custom-xxx.scss` files, these are where you will put any SASS for the components you will develop.
