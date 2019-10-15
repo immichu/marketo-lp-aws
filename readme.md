@@ -29,16 +29,19 @@ You will have a few main folders you will work in:
   - Note that you may also pass 'props' to the partial, let's say your partial is a button, see below example:
 	-
 	```
-	<!-- partial filename is _button.html -->
+	<!-- Contents of partial, filename is _button.html -->
 	<button>{{name}}</button>
+	<!-- End contents -->
 
-	<!-- usage in a template/page -->
+	<!-- Usage in a template/page -->
 	{{> _button.html
 		name = "hello"
 	}}
+	<!-- End usage -->
 
-	<!-- outputs -->
+	<!-- Outputs -->
 	<button>hello</button>
+	<!-- End output -->
 	```
 
 
