@@ -23,7 +23,7 @@ You will have a few main folders you will work in:
 	---
 	```
 - **./src/layouts**
-  - Here is where you will create a boiler plate that contains `{{> body}}` and any other variables or partials you create to act as a template for your pages. All pages you make will use the 'default' template by... default lol, but if you wish to use an alternate template then in your pages, use frontmatter at the very top of yout page to declare a layout variable with the value equal to the file name of the html layout (minus the .ext). Below is an example of front matter in a 'page' file declaring the layout template to use:
+  - Here is where you will create a boiler plate that contains `{{> body}}` and any other variables or partials you create to act as a template for your pages. All pages you make will use the 'default' template by... default lol, but if you wish to use an alternate template then in your pages, use front matter at the very top of yout page to declare a layout variable with the value equal to the file name of the html layout (minus the .ext). Below is an example of front matter in a 'page' file declaring the layout template to use:
   - 
 	```
 	---
@@ -112,5 +112,33 @@ So after being happy with your page, you can run `npm run build` and the output 
   - Guided
   - {{any-desc-you-like-or-none}}
 
+You will need to approve the landing page template by right click => approve draft (or just approve, I can't remember). Currently only my account has permission to approve templates with no further plans to add others to be able to do so from AWS's side. therefore, when the need arrises that you may need to approve a template, give me a ping.
+
 ## Post build (new program and tokenisation)
 
+So we are Finished with our build and we have our files and assets on Marketo now, but we have one last thing we need to do. We need to actually create a program in 'Marketing Activities' in Marketo and then import our landing page. This is as follows:
+
+-	Goto Marketing Activities
+- Under TESTING LUXUS, click new => new program
+- Enter fields campaign folder, name, type, channel, desc as follows:
+  - TESTING LUXUS
+  - [TEST] {{your-page-name}} LP
+  - Default
+  - AWS Website
+  - {{any-desc-you-like-or-none}}
+- Next, right click your new program and click, 'new local asset'
+- Select Landing Page
+- Enter fields for name, page url, desc and template as follows
+  - Landing Page
+  - {{this-will-auto-populate-after-choosing-a-name}}
+  - {{any-desc-you-like-or-none}}
+  - {{choose-the-landing-page-you-made-from-the-list}} (only approved landing pages show up here)
+- Click create
+
+The final things you will have to do is first, click the program and then goto the tokens tab. Here you will add tokens you need from the right sidebar of the type you would like (i.e. rich text for multi line text/code or text for image url's and such). name the tokens appropriately like so: 
+
+`01_hero-image-url` and maarketo will append `my.` to it to make it `my.01_hero-image-url`, add some dummy value in the content and save. do this for all tokens you will need and it's best to try and make the tokens sequential to how they appear in the page.
+
+Next, click the landing page in the program that you made, then edit draft. this will open a new page that will let you edit any of the booleans, strings, and editable areas. Replace content in all these areas and string fields with tokens that you just made (NOTE: here is where Marketo will add a <div> around your tokens in the rich text editor, sometimes this is fine, sometimes note, test to find out). select the booleans you require and the page will auto save. now you can go back to your landing page in marketing activities and preview.
+
+If all content is placed in the tokens and you build your page to take into account for the extra divs Marketo adds, then you should be good to go. Bear in mind any change you need to make to the landing page in Design Studio, will need to be reapproved. so ping me again ^^b
