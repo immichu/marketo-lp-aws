@@ -1,0 +1,671 @@
+.saponaws-hero {
+	background: center center/cover no-repeat $aws-squid;
+	h1 {
+		font-size: 4.8rem;
+		font-weight: 400;
+		line-height: 6.2rem;
+		color: #ffffff;
+		margin: 0;
+	}
+	h4 {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 2.7rem;
+		color: #ffffff;
+		margin-top: ($spacer * 2.5);
+		margin-bottom: 0;
+	}
+	a {
+		display: inline-block;
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.4rem;
+		font-weight: 500;
+		line-height: 3.1rem;
+		color: #ffffff;
+		margin-top: ($spacer * 4.5);
+	}
+	.saponaws-hero-image {
+		display: flex;
+	}
+}
+
+.saponaws-navlinks {
+	background: #f2f4f4;
+	nav {
+		ul {
+			display: flex;
+			margin: 0;
+			list-style-type: none;
+			padding-top: 0.3rem;
+			padding-bottom: 0.3rem;
+			@include media-breakpoint-down(lg) {
+				flex-direction: column;
+			}
+			li {
+				margin-right: ($spacer * 4.5);
+				padding: 0.3rem 0;
+				@include media-breakpoint-down(md) {
+					margin-right: 0;
+				}
+				a {
+					font-size: 1.4rem;
+					font-weight: 500;
+					line-height: 2.2rem;
+					color: $aws-squid;
+				}
+			}
+		}
+	}
+	&.sticky {
+		position: fixed;
+		position: sticky;
+		top: 68px;
+		width: 100%;
+		z-index: 1;
+		@include media-breakpoint-down(sm) {
+			top: 0px;
+		}
+	}
+}
+
+.saponaws-lead {
+	h3 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 3rem;
+		color: $aws-squid;
+		margin-bottom: 1.5rem;
+	}
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.5rem;
+		color: $aws-squid;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.saponaws-advantage {
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+		margin-bottom: 0;
+	}
+	#advantageContent {
+		> div > div {
+			> div {
+				margin-top: ($spacer * 3);
+				@include make-col-ready();
+				@include make-col(2.4);
+				@include media-breakpoint-down(md) {
+					@include make-col(4);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(6);
+				}
+				> div {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 100%;
+					border: 1px solid $aws-squid;
+					padding: 1.5rem;
+					p {
+						text-align: center;
+						font-size: 2.8rem;
+						font-weight: 500;
+						line-height: 3.6rem;
+						color: $aws-squid;
+					}
+					div {
+						text-align: center;
+						font-size: 1.4rem;
+						font-weight: 400;
+						line-height: 2.2rem;
+						color: $aws-squid;
+					}
+				}
+			}
+		}
+	}
+	#advantageCaption {
+		> div {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.2rem;
+			color: $aws-squid;
+		}
+	}
+}
+
+.saponaws-why {
+	background-color: $aws-oxygen;
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+		margin-bottom: 3rem;
+	}
+	.whyVideo {
+		.row {
+			@include media-breakpoint-up(md) {
+				background: $aws-magnesium;
+				border-radius: 0.25rem;
+			}
+		}
+	}
+	#whyText {
+		p {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	#whyAccordion {
+		> div > div {
+			@extend .row;
+			margin: unset;
+			.accordion {
+				@extend .m-0;
+				> div {
+					@extend .row;
+					margin: unset;
+					@extend .justify-content-center;
+					> div {
+						span {
+							&:first-child {
+								@extend .pr-12;
+							}
+							&:last-child {
+								@extend .ml-auto;
+							}
+						}
+						@extend .col-lg-8;
+						@extend .col-md-10;
+						@extend .px-lg-0;
+						@extend .d-flex;
+					}
+				}
+				* {
+					font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+				background-color: $aws-magnesium;
+				color: $aws-squid;
+				cursor: pointer;
+				padding: 10px 0px;
+				@extend .w-100;
+				text-align: left;
+				border: 1px solid $aws-zinc;
+				border-top-width: 0;
+				outline: none;
+				border-radius: 0px;
+				font-size: 1.8rem;
+				font-weight: 300;
+				> div {
+					display: flex;
+				}
+				&.active {
+					+ .panel {
+						border-bottom-width: 1px;
+					}
+					span {
+						i {
+							&.arr {
+								transform: translate(-50%, -50%) rotate(-135deg);
+								top: 60%;
+								border: solid $aws-silver;
+								border-width: 0 4px 4px 0;
+							}
+						}
+					}
+				}
+				span {
+					position: relative;
+					i {
+						border: solid $aws-platinum;
+						border-width: 0 4px 4px 0;
+						border-radius: 1px;
+						display: inline-block;
+						padding: 4px;
+						position: absolute;
+						top: 50%;
+						right: 0;
+						&.arr {
+							transform: translate(-50%, -50%) rotate(45deg);
+						}
+					}
+				}
+			}
+			.panel {
+				display: none;
+				background-color: white;
+				overflow: hidden;
+				border: 1px solid $aws-zinc;
+				border-bottom-width: 0;
+				border-top-width: 0;
+				color: $aws-squid;
+				@extend .row;
+				margin: unset;
+				@extend .justify-content-center;
+				> div {
+					@extend .offset-md-1;
+					@extend .offset-lg-2;
+					@extend .col-md-10;
+					@extend .col-lg-8;
+					@extend .py-4;
+					@extend .px-lg-0;
+				}
+			}
+			&:first-child {
+				.accordion {
+					border-top-width: 1px;
+					border-top-left-radius: 0.25rem;
+					border-top-right-radius: 0.25rem;
+				}
+			}
+			&:last-child {
+				.accordion {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+					&.active {
+						border-bottom-left-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+				}
+				.panel {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+				}
+			}
+		}
+	}
+	.whyDuoAccordion {
+		> div > div {
+			@extend .row;
+			margin: unset;
+			.accordion {
+				@extend .m-0;
+				> div {
+					@extend .row;
+					margin: unset;
+					> div {
+						span {
+							&:first-child {
+								@extend .pr-12;
+							}
+							&:last-child {
+								@extend .ml-auto;
+							}
+						}
+						@extend .col-lg-10;
+						@extend .d-flex;
+					}
+					@extend .justify-content-center;
+				}
+				* {
+					font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+				background-color: $aws-magnesium;
+				color: $aws-squid;
+				cursor: pointer;
+				padding: 10px 0px;
+				@extend .w-100;
+				text-align: left;
+				border: 1px solid $aws-zinc;
+				border-top-width: 0;
+				outline: none;
+				border-radius: 0px;
+				font-size: 1.8rem;
+				font-weight: 300;
+				> div {
+					display: flex;
+				}
+				&.active {
+					+ .panel {
+						border-bottom-width: 1px;
+					}
+					span {
+						i {
+							&.arr {
+								transform: translate(-50%, -50%) rotate(-135deg);
+								top: 60%;
+								border: solid $aws-silver;
+								border-width: 0 4px 4px 0;
+							}
+						}
+					}
+				}
+				span {
+					position: relative;
+					i {
+						border: solid $aws-platinum;
+						border-width: 0 4px 4px 0;
+						border-radius: 1px;
+						display: inline-block;
+						padding: 4px;
+						position: absolute;
+						top: 50%;
+						right: 0;
+						&.arr {
+							transform: translate(-50%, -50%) rotate(45deg)
+						}
+					}
+				}
+			}
+			.panel {
+				display: none;
+				background-color: white;
+				overflow: hidden;
+				border: 1px solid $aws-zinc;
+				border-bottom-width: 0;
+				border-top-width: 0;
+				color: $aws-squid;
+				@extend .row;
+				margin: unset;
+				@extend .justify-content-center;
+				> div {
+					@extend .offset-lg-1;
+					@extend .col-lg-10;
+					@extend .py-4;
+				}
+			}
+			&:first-child {
+				.accordion {
+					border-top-width: 1px;
+					border-top-left-radius: 0.25rem;
+					border-top-right-radius: 0.25rem;
+				}
+			}
+			&:last-child {
+				.accordion {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+					&.active {
+						border-bottom-left-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+				}
+				.panel {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+				}
+			}
+		}
+	}
+	#whyCards {
+		> div > div {
+			> div {
+				@include make-col-ready();
+				@include make-col(4);
+				@include media-breakpoint-down(md) {
+					@include make-col(6);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(12);
+				}
+				margin-top: ($spacer * 3);
+				> div {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					border-top: 5px solid $aws-squid;
+					padding: 1.5rem;
+					box-shadow: 0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04);
+					background-color: #ffffff;
+					background-image: linear-gradient(0deg,#eaeded 0,#fff);
+					h3 {
+						font-size: 2rem;
+						font-weight: 500;
+						line-height: 3rem;
+						color: $aws-squid;
+						margin: ($spacer * 1.5) 0;
+					}
+					p {
+						&:last-child {
+							font-size: 1.4rem;
+							font-weight: 500;
+							line-height: 2.2rem;
+							color: $aws-squid;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	#whyCaption {
+		> div {
+			text-align: center;
+			font-size: 1.4rem;
+			font-weight: 400;
+			line-height: 2.2rem;
+			color: $aws-squid;
+		}
+	}
+}
+
+.saponaws-popular {
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+		margin-bottom: 3rem;
+	}
+	#popularText {
+		p {
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+	#popularCards {
+		> div > div {
+			> div {
+				@include make-col-ready();
+				@include make-col(4);
+				@include media-breakpoint-down(md) {
+					@include make-col(6);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(12);
+				}
+				margin-top: ($spacer * 3);
+				> div {
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					padding: 1.5rem;
+					figure {
+						margin-bottom: 1.5rem;
+						img {
+							display: block;
+							margin: 0 auto;
+						}
+					}
+					p {
+						&:last-child {
+							font-size: 1.4rem;
+							line-height: 2.2rem;
+							color: $aws-squid;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.saponaws-case-studies {
+	background-color: $aws-oxygen;
+	h3 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 3rem;
+		color: $aws-squid;
+		margin-bottom: 3rem;
+	}
+	h2 {
+		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		font-size: 2.8rem;
+		font-weight: 500;
+		line-height: 3.6rem;
+		color: $aws-squid;
+	}
+	#casesVideos {
+		margin-bottom: 3rem;
+		> div > div {
+			> div {
+				@include make-col-ready();
+				@include make-col(4);
+				@include media-breakpoint-down(md) {
+					@include make-col(6);
+				}
+				@include media-breakpoint-down(sm) {
+					@include make-col(12);
+				}
+				margin-top: 3rem;
+				> div {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					height: 100%;
+					@extend .shadow-sm;
+					background: #ffffff;
+					transition: ease 0.2s;
+					&:hover {
+						@extend .shadow;
+					}
+					img {
+						@extend .img-fluid;
+					}
+					p {
+						padding: 1.5rem;
+						padding-bottom: 0.5rem;
+					}
+					> a {
+						@extend .stretched-link;
+						padding-right: 1.5rem;
+						padding-bottom: 1.5rem;
+						padding-left: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+	.cases {
+		margin-top: 3rem;
+		@include make-row();
+		+ p {
+			height: 0;
+			margin: 0;
+		}
+		.case-image {
+			margin-bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include make-col-ready();
+			@include make-col(3);
+			@include media-breakpoint-down(md) {
+				@include make-col(4);
+				margin-bottom: ($spacer * 3);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);
+			}
+			figure {
+				margin-bottom: 0;
+			}
+		}
+		.case-content {
+			align-self: center;
+			@include make-col-ready();
+			@include make-col(9);
+			@include media-breakpoint-down(md) {
+				@include make-col(8);
+			}
+			@include media-breakpoint-down(sm) {
+				@include make-col(12);
+			}
+			p {
+				font-size: 1.6rem;
+				font-weight: 300;
+				line-height: 2.5rem;
+				color: $aws-squid;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				strong {
+					font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+			}
+			a {
+				font-size: 1.6rem;
+				font-weight: 400;
+				line-height: 2.5rem;
+			}
+		}
+	}
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		line-height: 2.5rem;
+		color: $aws-squid;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		strong {
+			font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
+		}
+	}
+	a {
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 2.5rem;
+	}
+}
+
+.saponaws-panel {
+	background: $aws-squid;
+	h1 {
+		font-size: 2.8rem;
+		font-weight: 400;
+		line-height: 3.6rem;
+		color: #ffffff;
+		margin: 0;
+	}
+	h2 {
+		font-size: 1.8rem;
+		font-weight: 400;
+		line-height: 2.7rem;
+		color: $aws-orange;
+		margin-top: ($spacer * 1.5);
+		margin-bottom: 0;
+	}
+	h4 {
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 2.2rem;
+		color: #ffffff;
+		margin-top: ($spacer * 1.5);
+		margin-bottom: 0;
+	}
+	.saponaws-panel-btt {
+		display: flex;
+		justify-content: center;
+		padding-top: ($spacer * 3);
+	}
+}

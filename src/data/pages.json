@@ -1,16 +1,10 @@
 {
   "pages": [
     {
-      "pageName": "lp-01-template"
+      "pageName": "sap-on-aws"
     },
     {
-      "pageName": "lp-01"
-    },
-    {
-      "pageName": "lp-02"
-    },
-    {
-      "pageName": "lp-03"
+      "pageName": "win-on-aws"
     }
   ]
 }

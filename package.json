@@ -4,27 +4,25 @@
   "description": "Flat page builder to create Marketo landing pages",
   "main": "app.js",
   "scripts": {
-    "start": "gulp"
+    "start": "NODE_ENV='development' gulp",
+    "build": "NODE_ENV='production' gulp"
   },
   "author": "Imran Dewji <immichu@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
     "panini": "^1.6.3"
   },
   "dependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "bootstrap": "^4.3.1",
-    "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-order": "^1.2.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.7"
+    "bootstrap": "^4.3.1"
   }
 }

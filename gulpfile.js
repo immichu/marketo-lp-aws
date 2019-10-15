@@ -1,15 +1,14 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var uglify = require("gulp-uglify");
-var concat = require("gulp-concat");
-var sourcemaps = require("gulp-sourcemaps");
-var order = require("gulp-order");
-var del = require("del");
-var fs = require('fs');
-var path = require('path');
-var panini = require("panini");
-var browserSync = require("browser-sync").create();
-var babel = require("gulp-babel");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const uglify = require("gulp-uglify");
+const sourcemaps = require("gulp-sourcemaps");
+const rename = require("gulp-rename");
+const del = require("del");
+const fs = require('fs');
+const path = require('path');
+const panini = require("panini");
+const browserSync = require("browser-sync").create();
+const babel = require("gulp-babel");
 
 function bs(done) {
   browserSync.init({
@@ -50,14 +49,13 @@ function pagesData(done) {
 function copyHTML(done) {
   panini.refresh();
   gulp.src("src/pages/**/*.html")
-    .pipe(
-      panini({
-        root: "src/pages",
-        layouts: "src/layouts",
-        partials: "src/partials",
-        data: "src/data"
-      })
-    )
+    .pipe(panini({
+			root: "src/pages",
+			layouts: "src/layouts",
+			partials: "src/partials",
+			helpers: "src/helpers",
+			data: "src/data"
+		}))
     .pipe(gulp.dest("dist"))
     .pipe(browserSync.stream());
   done();
@@ -67,14 +65,10 @@ function copyJS(done) {
 	gulp.src("src/assets/js/*.js")
 		.pipe(sourcemaps.init())
 		.pipe(babel())
-		.pipe(order([
-			'jquery.min.js',
-			'popper.min.js',
-			'bootstrap.min.js',
-			'scripts.js'
-		]))
-		.pipe(concat('win-on-aws.js'))
-		// .pipe(uglify())
+		.pipe(rename({
+      basename: 'main-on-aws',
+    }))
+		.pipe(uglify())
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest("dist/js"))
 		.pipe(browserSync.stream());

@@ -45,13 +45,24 @@ $spacers: map-merge(
 
 $aws-squid: #232F3E;
 $aws-orange: #ff9900;
-$aws-gray-bg: #FAFAFA;
+$aws-oxygen: #FAFAFA;
+$aws-magnesium: #F2F4F4;
+$aws-zinc: #d5dbdb;
+$aws-silver: #aab7b8;
+$aws-platinum: #879196;
+$aws-mercury: #545b64;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
     "aws-squid": $aws-squid,
-    "aws-orange": $aws-orange
+    "aws-orange": $aws-orange,
+    "aws-oxygen": $aws-oxygen,
+    "aws-magnesium": $aws-magnesium,
+    "aws-zinc": $aws-zinc,
+    "aws-silver": $aws-silver,
+    "aws-platinum": $aws-platinum,
+    "aws-mercury": $aws-mercury
   ),
   $theme-colors
 );

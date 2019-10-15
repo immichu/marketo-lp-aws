@@ -21,6 +21,7 @@ Amazon Web Services
 <meta class="mktoString" id="socialDescription" mktoName="Social Media Description" default="Moving your SAP applications to the cloud with AWS is an easy way to save on TCO, enable innovation, and get more from your SAP investment." allowHtml="false">
 <meta class="mktoString" id="socialImage" mktoName="Social Media Image" default="https://a0.awsstatic.com/main/images/open-graph/opengraph.gif" allowHtml="false">
 <meta class="mktoString" id="heroBackground" mktoName="Hero Background" default="https://pages.awscloud.com/rs/112-TZM-766/images/wind-turbine-wide-engie-hero-2000x650.jpg" allowHtml="false">
+<meta class="mktoString" id="whyVideoUrl" mktoName="Why Video URL" default="https://www.youtube.com/embed/iFGve5MUUnE?start=53&end=59" allowHtml="false">
 
 <meta class="mktoBoolean" id="heroDisplay" mktoName="Hero Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="heroHasImage" mktoName="Hero Has Image" default="false" true_value="flex" false_value="none" false_value_name="No" true_value_name="Yes">
@@ -28,6 +29,10 @@ Amazon Web Services
 <meta class="mktoBoolean" id="leadDisplay" mktoName="Lead Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="advantageDisplay" mktoName="Advantage Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="whyDisplay" mktoName="Why Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="whyDisplayVideo" mktoName="Display Why Video" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="whyDisplayAccordion" mktoName="Display Why Accordion" default="true" true_value="flex" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="whyDisplayDuoAccordion" mktoName="Display Why Duo Accordion" default="true" true_value="flex" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
+<meta class="mktoBoolean" id="whyDisplayCards" mktoName="Display Why Cards" default="true" true_value="flex" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="popularDisplay" mktoName="Popular Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="casesDisplay" mktoName="Case Studies Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
 <meta class="mktoBoolean" id="panelDisplay" mktoName="Panel Block" default="true" true_value="block" false_value="none" false_value_name="Disabled" true_value_name="Enabled">
@@ -471,8 +476,19 @@ window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){va
 	}
 </style>
 
+<!-- Tokenized Head CSS {{my.Universal - Dev_Comment Close}}
+{{my.Universal - Dev_Head CSS}}
+{{my.Folder - Dev_Head CSS}}
+{{my.Content - Dev_Head CSS}}
+{{my.Universal - Dev_Comment Open}} /Tokenized Head CSS -->
 
-<link rel="stylesheet" href="https://pages.awscloud.com/rs/112-TZM-766/images/sap-on-aws.css" /> 
+<!-- Tokenized Head JS {{my.Universal - Dev_Comment Close}}
+{{my.Universal - Dev_Head JS}}
+{{my.Folder - Dev_Head JS}}
+{{my.Content - Dev_Head JS}}
+{{my.Universal - Dev_Comment Open}} /Tokenized Head JS -->
+
+<link rel="stylesheet" href="../css/sap-on-aws.css" /> 
 
 <script>
 	var AWS = {
@@ -513,6 +529,7 @@ window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){va
 		waitSeconds: 15
 	};
 </script>
+
 <script type="text/javascript" src="https://pages.awscloud.com/rs/112-TZM-766/images/jq-3.3.1.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/aws-marketo-m2-resources/js/demandbase/mkto-demandbase.js"></script>
 <script type="text/javascript" async="" src="//munchkin.marketo.net/154/munchkin.js"></script>
@@ -3594,7 +3611,7 @@ window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){va
 <!-- Header Content -->
 
 <!-- Main Content -->
-<main id="pageTop" class="">
+<main id="pageTop" class="saponaws">
 	
 	<section id="saponaws-hero" class="saponaws-hero"
 		style="background-image: url(${heroBackground}); display: ${heroDisplay};">
@@ -4185,13 +4202,7 @@ window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){va
 </div>
 <!-- Footer Content -->
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="https://pages.awscloud.com/rs/112-TZM-766/images/sap-on-aws.js"></script>
+<script src="../js/main-on-aws.js"></script>
 
 <!-- Twitter Pixel -->
 <script type="text/javascript">
@@ -4221,7 +4232,7 @@ items.appendTo('#wbnMultiSesCont');
 </script> 
 
 <div id="aws-page-end"></div>
-<!-- <script>require(['jquery', 'scripts']);</script>  -->
+<script>require(['jquery', 'scripts']);</script> 
 <script src="https://a0.awsstatic.com/da/js/1.0.12/aws-da.js"></script> 
 <!-- SiteCatalyst code version: H.26. Copyright 1996-2012 Adobe, Inc. All Rights Reserved More info available at http://www.omniture.com -->
 <script src="https://a0.awsstatic.com/s_code/js/1.0/awshome_s_code.js"></script>
@@ -4248,6 +4259,11 @@ width="1" />
 <!-- End SiteCatalyst code version: H.26. -->
 
 <div class="mktoContent"></div>
+<!-- Tokenized Footer JS {{my.Universal - Dev_Comment Close}}
+{{my.Universal - Dev_Foot JS}}
+{{my.Folder - Dev_Foot JS}}
+{{my.Content - Dev_Foot JS}}
+{{my.Universal - Dev_Comment Open}} /Tokenized Footer JS -->
 <!--Cookie and Global Management -->
 
 <script src="https://s3-us-west-2.amazonaws.com/aws-marketo/marketo_Js_Resources/Cookie_Consent_JS/cookie_consentjs.js"></script>

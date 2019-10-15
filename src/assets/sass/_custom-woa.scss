@@ -146,7 +146,7 @@
 }
 
 .winonaws-why {
-	background-color: $aws-gray-bg;
+	background-color: $aws-oxygen;
 	h2 {
 		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
 		font-size: 2.8rem;
@@ -156,13 +156,248 @@
 		margin-bottom: 3rem;
 	}
 	.whyVideo {
-		margin-bottom: 3rem;
-		
+		.row {
+			@include media-breakpoint-up(md) {
+				background: $aws-magnesium;
+				border-radius: 0.25rem;
+			}
+		}
 	}
 	#whyText {
 		p {
 			&:last-child {
 				margin: 0;
+			}
+		}
+	}
+	#whyAccordion {
+		> div > div {
+			@extend .row;
+			margin: unset;
+			.accordion {
+				@extend .m-0;
+				> div {
+					@extend .row;
+					margin: unset;
+					@extend .justify-content-center;
+					> div {
+						span {
+							&:first-child {
+								@extend .pr-12;
+							}
+							&:last-child {
+								@extend .ml-auto;
+							}
+						}
+						@extend .col-lg-8;
+						@extend .col-md-10;
+						@extend .px-lg-0;
+						@extend .d-flex;
+					}
+				}
+				* {
+					font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+				background-color: $aws-magnesium;
+				color: $aws-squid;
+				cursor: pointer;
+				padding: 10px 0px;
+				@extend .w-100;
+				text-align: left;
+				border: 1px solid $aws-zinc;
+				border-top-width: 0;
+				outline: none;
+				border-radius: 0px;
+				font-size: 1.8rem;
+				font-weight: 300;
+				> div {
+					display: flex;
+				}
+				&.active {
+					+ .panel {
+						border-bottom-width: 1px;
+					}
+					span {
+						i {
+							&.arr {
+								transform: translate(-50%, -50%) rotate(-135deg);
+								top: 60%;
+								border: solid $aws-silver;
+								border-width: 0 4px 4px 0;
+							}
+						}
+					}
+				}
+				span {
+					position: relative;
+					i {
+						border: solid $aws-platinum;
+						border-width: 0 4px 4px 0;
+						border-radius: 1px;
+						display: inline-block;
+						padding: 4px;
+						position: absolute;
+						top: 50%;
+						right: 0;
+						&.arr {
+							transform: translate(-50%, -50%) rotate(45deg);
+						}
+					}
+				}
+			}
+			.panel {
+				display: none;
+				background-color: white;
+				overflow: hidden;
+				border: 1px solid $aws-zinc;
+				border-bottom-width: 0;
+				border-top-width: 0;
+				color: $aws-squid;
+				@extend .row;
+				margin: unset;
+				@extend .justify-content-center;
+				> div {
+					@extend .offset-md-1;
+					@extend .offset-lg-2;
+					@extend .col-md-10;
+					@extend .col-lg-8;
+					@extend .py-4;
+					@extend .px-lg-0;
+				}
+			}
+			&:first-child {
+				.accordion {
+					border-top-width: 1px;
+					border-top-left-radius: 0.25rem;
+					border-top-right-radius: 0.25rem;
+				}
+			}
+			&:last-child {
+				.accordion {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+					&.active {
+						border-bottom-left-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+				}
+				.panel {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+				}
+			}
+		}
+	}
+	.whyDuoAccordion {
+		> div > div {
+			@extend .row;
+			margin: unset;
+			.accordion {
+				@extend .m-0;
+				> div {
+					@extend .row;
+					margin: unset;
+					> div {
+						span {
+							&:first-child {
+								@extend .pr-12;
+							}
+							&:last-child {
+								@extend .ml-auto;
+							}
+						}
+						@extend .col-lg-10;
+						@extend .d-flex;
+					}
+					@extend .justify-content-center;
+				}
+				* {
+					font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif;
+				}
+				background-color: $aws-magnesium;
+				color: $aws-squid;
+				cursor: pointer;
+				padding: 10px 0px;
+				@extend .w-100;
+				text-align: left;
+				border: 1px solid $aws-zinc;
+				border-top-width: 0;
+				outline: none;
+				border-radius: 0px;
+				font-size: 1.8rem;
+				font-weight: 300;
+				> div {
+					display: flex;
+				}
+				&.active {
+					+ .panel {
+						border-bottom-width: 1px;
+					}
+					span {
+						i {
+							&.arr {
+								transform: translate(-50%, -50%) rotate(-135deg);
+								top: 60%;
+								border: solid $aws-silver;
+								border-width: 0 4px 4px 0;
+							}
+						}
+					}
+				}
+				span {
+					position: relative;
+					i {
+						border: solid $aws-platinum;
+						border-width: 0 4px 4px 0;
+						border-radius: 1px;
+						display: inline-block;
+						padding: 4px;
+						position: absolute;
+						top: 50%;
+						right: 0;
+						&.arr {
+							transform: translate(-50%, -50%) rotate(45deg)
+						}
+					}
+				}
+			}
+			.panel {
+				display: none;
+				background-color: white;
+				overflow: hidden;
+				border: 1px solid $aws-zinc;
+				border-bottom-width: 0;
+				border-top-width: 0;
+				color: $aws-squid;
+				@extend .row;
+				margin: unset;
+				@extend .justify-content-center;
+				> div {
+					@extend .offset-lg-1;
+					@extend .col-lg-10;
+					@extend .py-4;
+				}
+			}
+			&:first-child {
+				.accordion {
+					border-top-width: 1px;
+					border-top-left-radius: 0.25rem;
+					border-top-right-radius: 0.25rem;
+				}
+			}
+			&:last-child {
+				.accordion {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+					&.active {
+						border-bottom-left-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+				}
+				.panel {
+					border-bottom-left-radius: 0.25rem;
+					border-bottom-right-radius: 0.25rem;
+				}
 			}
 		}
 	}
@@ -273,7 +508,7 @@
 }
 
 .winonaws-case-studies {
-	background-color: $aws-gray-bg;
+	background-color: $aws-oxygen;
 	h3 {
 		font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
 		font-size: 2rem;
@@ -307,8 +542,12 @@
 					display: flex;
 					flex-direction: column;
 					height: 100%;
-					box-shadow: 0 1px 3px 0 rgba(0,0,0,.3), 0 0 0 1px rgba(0,0,0,.04);
+					@extend .shadow-sm;
 					background: #ffffff;
+					transition: ease 0.2s;
+					&:hover {
+						@extend .shadow;
+					}
 					img {
 						@extend .img-fluid;
 					}
@@ -402,31 +641,31 @@
 .winonaws-panel {
 	background: $aws-squid;
 	h1 {
-		font-size: 4.8rem;
+		font-size: 2.8rem;
 		font-weight: 400;
-		line-height: 6.2rem;
+		line-height: 3.6rem;
 		color: #ffffff;
 		margin: 0;
 	}
 	h2 {
-		font-size: 2.8rem;
-		font-weight: 400;
-		line-height: 3.6rem;
-		color: $aws-orange;
-		margin-top: ($spacer * 2.5);
-		margin-bottom: 0;
-	}
-	h4 {
 		font-size: 1.8rem;
 		font-weight: 400;
 		line-height: 2.7rem;
+		color: $aws-orange;
+		margin-top: ($spacer * 1.5);
+		margin-bottom: 0;
+	}
+	h4 {
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 2.2rem;
 		color: #ffffff;
-		margin-top: ($spacer * 2.5);
+		margin-top: ($spacer * 1.5);
 		margin-bottom: 0;
 	}
 	.winonaws-panel-btt {
 		display: flex;
 		justify-content: center;
-		padding-top: ($spacer * 5.5);
+		padding-top: ($spacer * 3);
 	}
 }

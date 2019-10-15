@@ -556,7 +556,7 @@ button.bg-aws-mercury:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div > div {
+.d-flex, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div > div {
   display: flex !important; }
 
 .d-inline-flex {
@@ -738,7 +738,7 @@ button.bg-aws-mercury:focus {
 .justify-content-end {
   justify-content: flex-end !important; }
 
-.justify-content-center, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div, .winonaws .winonaws-why #whyAccordion > div > div .panel, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .panel {
+.justify-content-center, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div, .saponaws .saponaws-why #whyAccordion > div > div .panel, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .panel {
   justify-content: center !important; }
 
 .justify-content-between {
@@ -1178,10 +1178,10 @@ button.bg-aws-mercury:focus {
   clip: auto;
   white-space: normal; }
 
-.shadow-sm, .winonaws .winonaws-case-studies #casesVideos > div > div > div > div {
+.shadow-sm, .saponaws .saponaws-case-studies #casesVideos > div > div > div > div {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
-.shadow, .winonaws .winonaws-case-studies #casesVideos > div > div > div > div:hover {
+.shadow, .saponaws .saponaws-case-studies #casesVideos > div > div > div > div:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .shadow-lg {
@@ -1199,7 +1199,7 @@ button.bg-aws-mercury:focus {
 .w-75 {
   width: 75% !important; }
 
-.w-100, .winonaws .winonaws-why #whyAccordion > div > div .accordion, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion {
+.w-100, .saponaws .saponaws-why #whyAccordion > div > div .accordion, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion {
   width: 100% !important; }
 
 .w-auto {
@@ -1238,7 +1238,7 @@ button.bg-aws-mercury:focus {
 .vh-100 {
   height: 100vh !important; }
 
-.stretched-link::after, .winonaws .winonaws-case-studies #casesVideos > div > div > div > div > a::after {
+.stretched-link::after, .saponaws .saponaws-case-studies #casesVideos > div > div > div > div > a::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -1249,7 +1249,7 @@ button.bg-aws-mercury:focus {
   content: "";
   background-color: rgba(0, 0, 0, 0); }
 
-.m-0, .winonaws .winonaws-why #whyAccordion > div > div .accordion, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion {
+.m-0, .saponaws .saponaws-why #whyAccordion > div > div .accordion, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion {
   margin: 0 !important; }
 
 .mt-0,
@@ -1729,8 +1729,8 @@ button.bg-aws-mercury:focus {
 
 .pt-4,
 .py-4,
-.winonaws .winonaws-why #whyAccordion > div > div .panel > div,
-.winonaws .winonaws-why .whyDuoAccordion > div > div .panel > div {
+.saponaws .saponaws-why #whyAccordion > div > div .panel > div,
+.saponaws .saponaws-why .whyDuoAccordion > div > div .panel > div {
   padding-top: 1.5rem !important; }
 
 .pr-4,
@@ -1739,8 +1739,8 @@ button.bg-aws-mercury:focus {
 
 .pb-4,
 .py-4,
-.winonaws .winonaws-why #whyAccordion > div > div .panel > div,
-.winonaws .winonaws-why .whyDuoAccordion > div > div .panel > div {
+.saponaws .saponaws-why #whyAccordion > div > div .panel > div,
+.saponaws .saponaws-why .whyDuoAccordion > div > div .panel > div {
   padding-bottom: 1.5rem !important; }
 
 .pl-4,
@@ -1887,7 +1887,7 @@ button.bg-aws-mercury:focus {
 .py-12 {
   padding-top: 5.5rem !important; }
 
-.pr-12, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div span:first-child, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div > div span:first-child,
+.pr-12, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div span:first-child, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div > div span:first-child,
 .px-12 {
   padding-right: 5.5rem !important; }
 
@@ -2446,7 +2446,7 @@ button.bg-aws-mercury:focus {
 .my-auto {
   margin-bottom: auto !important; }
 
-.ml-auto, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div span:last-child, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div > div span:last-child,
+.ml-auto, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div span:last-child, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div > div span:last-child,
 .mx-auto {
   margin-left: auto !important; }
 
@@ -4520,16 +4520,16 @@ button.bg-aws-mercury:focus {
     padding-top: 0 !important; }
   .pr-lg-0,
   .px-lg-0,
-  .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div,
-  .winonaws .winonaws-why #whyAccordion > div > div .panel > div {
+  .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div,
+  .saponaws .saponaws-why #whyAccordion > div > div .panel > div {
     padding-right: 0 !important; }
   .pb-lg-0,
   .py-lg-0 {
     padding-bottom: 0 !important; }
   .pl-lg-0,
   .px-lg-0,
-  .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div,
-  .winonaws .winonaws-why #whyAccordion > div > div .panel > div {
+  .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div,
+  .saponaws .saponaws-why #whyAccordion > div > div .panel > div {
     padding-left: 0 !important; }
   .p-lg-1 {
     padding: 0.25rem !important; }
@@ -6235,7 +6235,7 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   margin-right: auto;
   margin-left: auto; }
 
-.row, .winonaws .winonaws-why #whyAccordion > div > div, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div, .winonaws .winonaws-why #whyAccordion > div > div .panel, .winonaws .winonaws-why .whyDuoAccordion > div > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .panel {
+.row, .saponaws .saponaws-why #whyAccordion > div > div, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div, .saponaws .saponaws-why #whyAccordion > div > div .panel, .saponaws .saponaws-why .whyDuoAccordion > div > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .panel {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -6251,8 +6251,8 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div, .winonaws .winonaws-why #whyAccordion > div > div .panel > div, .col-md-11, .col-md-12, .col-md,
-.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .panel > div, .col-lg-11, .col-lg-12, .col-lg,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div, .saponaws .saponaws-why #whyAccordion > div > div .panel > div, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .panel > div, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
   position: relative;
@@ -6532,7 +6532,7 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
-  .col-md-10, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div, .winonaws .winonaws-why #whyAccordion > div > div .panel > div {
+  .col-md-10, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div, .saponaws .saponaws-why #whyAccordion > div > div .panel > div {
     flex: 0 0 83.33333%;
     max-width: 83.33333%; }
   .col-md-11 {
@@ -6573,7 +6573,7 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
     order: 12; }
   .offset-md-0 {
     margin-left: 0; }
-  .offset-md-1, .winonaws .winonaws-why #whyAccordion > div > div .panel > div {
+  .offset-md-1, .saponaws .saponaws-why #whyAccordion > div > div .panel > div {
     margin-left: 8.33333%; }
   .offset-md-2 {
     margin-left: 16.66667%; }
@@ -6626,13 +6626,13 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   .col-lg-7 {
     flex: 0 0 58.33333%;
     max-width: 58.33333%; }
-  .col-lg-8, .winonaws .winonaws-why #whyAccordion > div > div .accordion > div > div, .winonaws .winonaws-why #whyAccordion > div > div .panel > div {
+  .col-lg-8, .saponaws .saponaws-why #whyAccordion > div > div .accordion > div > div, .saponaws .saponaws-why #whyAccordion > div > div .panel > div {
     flex: 0 0 66.66667%;
     max-width: 66.66667%; }
   .col-lg-9 {
     flex: 0 0 75%;
     max-width: 75%; }
-  .col-lg-10, .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .panel > div {
+  .col-lg-10, .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .panel > div {
     flex: 0 0 83.33333%;
     max-width: 83.33333%; }
   .col-lg-11 {
@@ -6673,9 +6673,9 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
     order: 12; }
   .offset-lg-0 {
     margin-left: 0; }
-  .offset-lg-1, .winonaws .winonaws-why .whyDuoAccordion > div > div .panel > div {
+  .offset-lg-1, .saponaws .saponaws-why .whyDuoAccordion > div > div .panel > div {
     margin-left: 8.33333%; }
-  .offset-lg-2, .winonaws .winonaws-why #whyAccordion > div > div .panel > div {
+  .offset-lg-2, .saponaws .saponaws-why #whyAccordion > div > div .panel > div {
     margin-left: 16.66667%; }
   .offset-lg-3 {
     margin-left: 25%; }
@@ -6796,7 +6796,7 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
-.img-fluid, .winonaws .winonaws-case-studies #casesVideos > div > div > div > div img {
+.img-fluid, .saponaws .saponaws-case-studies #casesVideos > div > div > div > div img {
   max-width: 100%;
   height: auto; }
 
@@ -6841,13 +6841,13 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
 #aws-page-footer {
   margin-top: 0; }
 
-.winonaws * {
+.saponaws * {
   font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif; }
 
-.winonaws .container .row, .winonaws .container .winonaws-why #whyAccordion > div > div, .winonaws .winonaws-why .container #whyAccordion > div > div, .winonaws .container .winonaws-why #whyAccordion > div > div .accordion > div, .winonaws .winonaws-why #whyAccordion > div > div .container .accordion > div, .winonaws .container .winonaws-why #whyAccordion > div > div .panel, .winonaws .winonaws-why #whyAccordion > div > div .container .panel, .winonaws .container .winonaws-why .whyDuoAccordion > div > div, .winonaws .winonaws-why .container .whyDuoAccordion > div > div, .winonaws .container .winonaws-why .whyDuoAccordion > div > div .accordion > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .container .accordion > div, .winonaws .container .winonaws-why .whyDuoAccordion > div > div .panel, .winonaws .winonaws-why .whyDuoAccordion > div > div .container .panel {
+.saponaws .container .row, .saponaws .container .saponaws-why #whyAccordion > div > div, .saponaws .saponaws-why .container #whyAccordion > div > div, .saponaws .container .saponaws-why #whyAccordion > div > div .accordion > div, .saponaws .saponaws-why #whyAccordion > div > div .container .accordion > div, .saponaws .container .saponaws-why #whyAccordion > div > div .panel, .saponaws .saponaws-why #whyAccordion > div > div .container .panel, .saponaws .container .saponaws-why .whyDuoAccordion > div > div, .saponaws .saponaws-why .container .whyDuoAccordion > div > div, .saponaws .container .saponaws-why .whyDuoAccordion > div > div .accordion > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .container .accordion > div, .saponaws .container .saponaws-why .whyDuoAccordion > div > div .panel, .saponaws .saponaws-why .whyDuoAccordion > div > div .container .panel {
   margin: unset; }
 
-.winonaws .btn {
+.saponaws .btn {
   display: inline-block;
   min-width: 25rem;
   padding: 0.7rem 1.6rem;
@@ -6860,43 +6860,43 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
   color: #333; }
-  .winonaws .btn:visited {
+  .saponaws .btn:visited {
     color: #333; }
-  .winonaws .btn.btn-primary {
+  .saponaws .btn.btn-primary {
     border-color: #be952c #a68226 #9b7924;
     background-color: #eeba37;
     background-image: linear-gradient(180deg, #fee6b0 0, #eeba37); }
-    .winonaws .btn.btn-primary:hover {
+    .saponaws .btn.btn-primary:hover {
       border-color: #a98527 #917221 #86691f;
       background-image: linear-gradient(180deg, #fede97 0, #ecb21f); }
-  .winonaws .btn.btn-secondary {
+  .saponaws .btn.btn-secondary {
     border-color: #d5dbdb;
     background-color: #fafafa;
     background-image: linear-gradient(180deg, #fafafa 0, #eaeded); }
-    .winonaws .btn.btn-secondary:hover {
+    .saponaws .btn.btn-secondary:hover {
       border-color: #c6cccc;
       background-color: #e0e3e3;
       background-image: linear-gradient(180deg, #f5f5f5 0, #e0e3e3); }
-  .winonaws .btn:hover {
+  .saponaws .btn:hover {
     text-decoration: none;
     color: #333; }
 
-.winonaws .winonaws-hero {
+.saponaws .saponaws-hero {
   background: center center/cover no-repeat #232F3E; }
-  .winonaws .winonaws-hero h1 {
+  .saponaws .saponaws-hero h1 {
     font-size: 4.8rem;
     font-weight: 400;
     line-height: 6.2rem;
     color: #ffffff;
     margin: 0; }
-  .winonaws .winonaws-hero h4 {
+  .saponaws .saponaws-hero h4 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.7rem;
     color: #ffffff;
     margin-top: 2.5rem;
     margin-bottom: 0; }
-  .winonaws .winonaws-hero a {
+  .saponaws .saponaws-hero a {
     display: inline-block;
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 2.4rem;
@@ -6904,42 +6904,42 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
     line-height: 3.1rem;
     color: #ffffff;
     margin-top: 4.5rem; }
-  .winonaws .winonaws-hero .winonaws-hero-image {
+  .saponaws .saponaws-hero .saponaws-hero-image {
     display: flex; }
 
-.winonaws .winonaws-navlinks {
+.saponaws .saponaws-navlinks {
   background: #f2f4f4; }
-  .winonaws .winonaws-navlinks nav ul {
+  .saponaws .saponaws-navlinks nav ul {
     display: flex;
     margin: 0;
     list-style-type: none;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem; }
     @media (max-width: 1199.98px) {
-      .winonaws .winonaws-navlinks nav ul {
+      .saponaws .saponaws-navlinks nav ul {
         flex-direction: column; } }
-    .winonaws .winonaws-navlinks nav ul li {
+    .saponaws .saponaws-navlinks nav ul li {
       margin-right: 4.5rem;
       padding: 0.3rem 0; }
       @media (max-width: 979.98px) {
-        .winonaws .winonaws-navlinks nav ul li {
+        .saponaws .saponaws-navlinks nav ul li {
           margin-right: 0; } }
-      .winonaws .winonaws-navlinks nav ul li a {
+      .saponaws .saponaws-navlinks nav ul li a {
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 2.2rem;
         color: #232F3E; }
-  .winonaws .winonaws-navlinks.sticky {
+  .saponaws .saponaws-navlinks.sticky {
     position: fixed;
     position: sticky;
     top: 68px;
     width: 100%;
     z-index: 1; }
     @media (max-width: 768.98px) {
-      .winonaws .winonaws-navlinks.sticky {
+      .saponaws .saponaws-navlinks.sticky {
         top: 0px; } }
 
-.winonaws .winonaws-lead h3 {
+.saponaws .saponaws-lead h3 {
   font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 2rem;
   font-weight: 500;
@@ -6947,15 +6947,15 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   color: #232F3E;
   margin-bottom: 1.5rem; }
 
-.winonaws .winonaws-lead p {
+.saponaws .saponaws-lead p {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.5rem;
   color: #232F3E; }
-  .winonaws .winonaws-lead p:last-child {
+  .saponaws .saponaws-lead p:last-child {
     margin-bottom: 0; }
 
-.winonaws .winonaws-advantage h2 {
+.saponaws .saponaws-advantage h2 {
   font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 2.8rem;
   font-weight: 500;
@@ -6963,7 +6963,7 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   color: #232F3E;
   margin-bottom: 0; }
 
-.winonaws .winonaws-advantage #advantageContent > div > div > div {
+.saponaws .saponaws-advantage #advantageContent > div > div > div {
   margin-top: 3rem;
   position: relative;
   width: 100%;
@@ -6972,43 +6972,43 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   flex: 0 0 20%;
   max-width: 20%; }
   @media (max-width: 979.98px) {
-    .winonaws .winonaws-advantage #advantageContent > div > div > div {
+    .saponaws .saponaws-advantage #advantageContent > div > div > div {
       flex: 0 0 33.33333%;
       max-width: 33.33333%; } }
   @media (max-width: 768.98px) {
-    .winonaws .winonaws-advantage #advantageContent > div > div > div {
+    .saponaws .saponaws-advantage #advantageContent > div > div > div {
       flex: 0 0 50%;
       max-width: 50%; } }
-  .winonaws .winonaws-advantage #advantageContent > div > div > div > div {
+  .saponaws .saponaws-advantage #advantageContent > div > div > div > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     border: 1px solid #232F3E;
     padding: 1.5rem; }
-    .winonaws .winonaws-advantage #advantageContent > div > div > div > div p {
+    .saponaws .saponaws-advantage #advantageContent > div > div > div > div p {
       text-align: center;
       font-size: 2.8rem;
       font-weight: 500;
       line-height: 3.6rem;
       color: #232F3E; }
-    .winonaws .winonaws-advantage #advantageContent > div > div > div > div div {
+    .saponaws .saponaws-advantage #advantageContent > div > div > div > div div {
       text-align: center;
       font-size: 1.4rem;
       font-weight: 400;
       line-height: 2.2rem;
       color: #232F3E; }
 
-.winonaws .winonaws-advantage #advantageCaption > div {
+.saponaws .saponaws-advantage #advantageCaption > div {
   text-align: center;
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2.2rem;
   color: #232F3E; }
 
-.winonaws .winonaws-why {
+.saponaws .saponaws-why {
   background-color: #FAFAFA; }
-  .winonaws .winonaws-why h2 {
+  .saponaws .saponaws-why h2 {
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 2.8rem;
     font-weight: 500;
@@ -7016,14 +7016,14 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
     color: #232F3E;
     margin-bottom: 3rem; }
   @media (min-width: 769px) {
-    .winonaws .winonaws-why .whyVideo .row, .winonaws .winonaws-why .whyVideo #whyAccordion > div > div, .winonaws .winonaws-why .whyVideo #whyAccordion > div > div .accordion > div, .winonaws .winonaws-why #whyAccordion > div > div .whyVideo .accordion > div, .winonaws .winonaws-why .whyVideo #whyAccordion > div > div .panel, .winonaws .winonaws-why #whyAccordion > div > div .whyVideo .panel, .winonaws .winonaws-why .whyVideo .whyDuoAccordion > div > div, .winonaws .winonaws-why .whyVideo .whyDuoAccordion > div > div .accordion > div, .winonaws .winonaws-why .whyDuoAccordion > div > div .whyVideo .accordion > div, .winonaws .winonaws-why .whyVideo .whyDuoAccordion > div > div .panel, .winonaws .winonaws-why .whyDuoAccordion > div > div .whyVideo .panel {
+    .saponaws .saponaws-why .whyVideo .row, .saponaws .saponaws-why .whyVideo #whyAccordion > div > div, .saponaws .saponaws-why .whyVideo #whyAccordion > div > div .accordion > div, .saponaws .saponaws-why #whyAccordion > div > div .whyVideo .accordion > div, .saponaws .saponaws-why .whyVideo #whyAccordion > div > div .panel, .saponaws .saponaws-why #whyAccordion > div > div .whyVideo .panel, .saponaws .saponaws-why .whyVideo .whyDuoAccordion > div > div, .saponaws .saponaws-why .whyVideo .whyDuoAccordion > div > div .accordion > div, .saponaws .saponaws-why .whyDuoAccordion > div > div .whyVideo .accordion > div, .saponaws .saponaws-why .whyVideo .whyDuoAccordion > div > div .panel, .saponaws .saponaws-why .whyDuoAccordion > div > div .whyVideo .panel {
       background: #F2F4F4;
       border-radius: 0.25rem; } }
-  .winonaws .winonaws-why #whyText p:last-child {
+  .saponaws .saponaws-why #whyText p:last-child {
     margin: 0; }
-  .winonaws .winonaws-why #whyAccordion > div > div {
+  .saponaws .saponaws-why #whyAccordion > div > div {
     margin: unset; }
-    .winonaws .winonaws-why #whyAccordion > div > div .accordion {
+    .saponaws .saponaws-why #whyAccordion > div > div .accordion {
       background-color: #F2F4F4;
       color: #232F3E;
       cursor: pointer;
@@ -7035,22 +7035,22 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       border-radius: 0px;
       font-size: 1.8rem;
       font-weight: 300; }
-      .winonaws .winonaws-why #whyAccordion > div > div .accordion > div {
+      .saponaws .saponaws-why #whyAccordion > div > div .accordion > div {
         margin: unset; }
-      .winonaws .winonaws-why #whyAccordion > div > div .accordion * {
+      .saponaws .saponaws-why #whyAccordion > div > div .accordion * {
         font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif; }
-      .winonaws .winonaws-why #whyAccordion > div > div .accordion > div {
+      .saponaws .saponaws-why #whyAccordion > div > div .accordion > div {
         display: flex; }
-      .winonaws .winonaws-why #whyAccordion > div > div .accordion.active + .panel {
+      .saponaws .saponaws-why #whyAccordion > div > div .accordion.active + .panel {
         border-bottom-width: 1px; }
-      .winonaws .winonaws-why #whyAccordion > div > div .accordion.active span i.arr {
+      .saponaws .saponaws-why #whyAccordion > div > div .accordion.active span i.arr {
         transform: translate(-50%, -50%) rotate(-135deg);
         top: 60%;
         border: solid #aab7b8;
         border-width: 0 4px 4px 0; }
-      .winonaws .winonaws-why #whyAccordion > div > div .accordion span {
+      .saponaws .saponaws-why #whyAccordion > div > div .accordion span {
         position: relative; }
-        .winonaws .winonaws-why #whyAccordion > div > div .accordion span i {
+        .saponaws .saponaws-why #whyAccordion > div > div .accordion span i {
           border: solid #879196;
           border-width: 0 4px 4px 0;
           border-radius: 1px;
@@ -7059,9 +7059,9 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
           position: absolute;
           top: 50%;
           right: 0; }
-          .winonaws .winonaws-why #whyAccordion > div > div .accordion span i.arr {
+          .saponaws .saponaws-why #whyAccordion > div > div .accordion span i.arr {
             transform: translate(-50%, -50%) rotate(45deg); }
-    .winonaws .winonaws-why #whyAccordion > div > div .panel {
+    .saponaws .saponaws-why #whyAccordion > div > div .panel {
       display: none;
       background-color: white;
       overflow: hidden;
@@ -7070,22 +7070,22 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       border-top-width: 0;
       color: #232F3E;
       margin: unset; }
-    .winonaws .winonaws-why #whyAccordion > div > div:first-child .accordion {
+    .saponaws .saponaws-why #whyAccordion > div > div:first-child .accordion {
       border-top-width: 1px;
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem; }
-    .winonaws .winonaws-why #whyAccordion > div > div:last-child .accordion {
+    .saponaws .saponaws-why #whyAccordion > div > div:last-child .accordion {
       border-bottom-left-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem; }
-      .winonaws .winonaws-why #whyAccordion > div > div:last-child .accordion.active {
+      .saponaws .saponaws-why #whyAccordion > div > div:last-child .accordion.active {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0; }
-    .winonaws .winonaws-why #whyAccordion > div > div:last-child .panel {
+    .saponaws .saponaws-why #whyAccordion > div > div:last-child .panel {
       border-bottom-left-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem; }
-  .winonaws .winonaws-why .whyDuoAccordion > div > div {
+  .saponaws .saponaws-why .whyDuoAccordion > div > div {
     margin: unset; }
-    .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion {
+    .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion {
       background-color: #F2F4F4;
       color: #232F3E;
       cursor: pointer;
@@ -7097,22 +7097,22 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       border-radius: 0px;
       font-size: 1.8rem;
       font-weight: 300; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div {
         margin: unset; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion * {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion * {
         font-family: AmazonEmber,Helvetica Neue,Helvetica,Arial,sans-serif; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion > div {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion > div {
         display: flex; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion.active + .panel {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion.active + .panel {
         border-bottom-width: 1px; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion.active span i.arr {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion.active span i.arr {
         transform: translate(-50%, -50%) rotate(-135deg);
         top: 60%;
         border: solid #aab7b8;
         border-width: 0 4px 4px 0; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion span {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion span {
         position: relative; }
-        .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion span i {
+        .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion span i {
           border: solid #879196;
           border-width: 0 4px 4px 0;
           border-radius: 1px;
@@ -7121,9 +7121,9 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
           position: absolute;
           top: 50%;
           right: 0; }
-          .winonaws .winonaws-why .whyDuoAccordion > div > div .accordion span i.arr {
+          .saponaws .saponaws-why .whyDuoAccordion > div > div .accordion span i.arr {
             transform: translate(-50%, -50%) rotate(45deg); }
-    .winonaws .winonaws-why .whyDuoAccordion > div > div .panel {
+    .saponaws .saponaws-why .whyDuoAccordion > div > div .panel {
       display: none;
       background-color: white;
       overflow: hidden;
@@ -7132,20 +7132,20 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       border-top-width: 0;
       color: #232F3E;
       margin: unset; }
-    .winonaws .winonaws-why .whyDuoAccordion > div > div:first-child .accordion {
+    .saponaws .saponaws-why .whyDuoAccordion > div > div:first-child .accordion {
       border-top-width: 1px;
       border-top-left-radius: 0.25rem;
       border-top-right-radius: 0.25rem; }
-    .winonaws .winonaws-why .whyDuoAccordion > div > div:last-child .accordion {
+    .saponaws .saponaws-why .whyDuoAccordion > div > div:last-child .accordion {
       border-bottom-left-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem; }
-      .winonaws .winonaws-why .whyDuoAccordion > div > div:last-child .accordion.active {
+      .saponaws .saponaws-why .whyDuoAccordion > div > div:last-child .accordion.active {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0; }
-    .winonaws .winonaws-why .whyDuoAccordion > div > div:last-child .panel {
+    .saponaws .saponaws-why .whyDuoAccordion > div > div:last-child .panel {
       border-bottom-left-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem; }
-  .winonaws .winonaws-why #whyCards > div > div > div {
+  .saponaws .saponaws-why #whyCards > div > div > div {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -7154,14 +7154,14 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
     max-width: 33.33333%;
     margin-top: 3rem; }
     @media (max-width: 979.98px) {
-      .winonaws .winonaws-why #whyCards > div > div > div {
+      .saponaws .saponaws-why #whyCards > div > div > div {
         flex: 0 0 50%;
         max-width: 50%; } }
     @media (max-width: 768.98px) {
-      .winonaws .winonaws-why #whyCards > div > div > div {
+      .saponaws .saponaws-why #whyCards > div > div > div {
         flex: 0 0 100%;
         max-width: 100%; } }
-    .winonaws .winonaws-why #whyCards > div > div > div > div {
+    .saponaws .saponaws-why #whyCards > div > div > div > div {
       display: flex;
       flex-direction: column;
       height: 100%;
@@ -7170,26 +7170,26 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.04);
       background-color: #ffffff;
       background-image: linear-gradient(0deg, #eaeded 0, #fff); }
-      .winonaws .winonaws-why #whyCards > div > div > div > div h3 {
+      .saponaws .saponaws-why #whyCards > div > div > div > div h3 {
         font-size: 2rem;
         font-weight: 500;
         line-height: 3rem;
         color: #232F3E;
         margin: 1.5rem 0; }
-      .winonaws .winonaws-why #whyCards > div > div > div > div p:last-child {
+      .saponaws .saponaws-why #whyCards > div > div > div > div p:last-child {
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 2.2rem;
         color: #232F3E;
         margin: 0; }
-  .winonaws .winonaws-why #whyCaption > div {
+  .saponaws .saponaws-why #whyCaption > div {
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.2rem;
     color: #232F3E; }
 
-.winonaws .winonaws-popular h2 {
+.saponaws .saponaws-popular h2 {
   font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 2.8rem;
   font-weight: 500;
@@ -7197,10 +7197,10 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   color: #232F3E;
   margin-bottom: 3rem; }
 
-.winonaws .winonaws-popular #popularText p:last-child {
+.saponaws .saponaws-popular #popularText p:last-child {
   margin: 0; }
 
-.winonaws .winonaws-popular #popularCards > div > div > div {
+.saponaws .saponaws-popular #popularCards > div > div > div {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -7209,47 +7209,47 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
   max-width: 33.33333%;
   margin-top: 3rem; }
   @media (max-width: 979.98px) {
-    .winonaws .winonaws-popular #popularCards > div > div > div {
+    .saponaws .saponaws-popular #popularCards > div > div > div {
       flex: 0 0 50%;
       max-width: 50%; } }
   @media (max-width: 768.98px) {
-    .winonaws .winonaws-popular #popularCards > div > div > div {
+    .saponaws .saponaws-popular #popularCards > div > div > div {
       flex: 0 0 100%;
       max-width: 100%; } }
-  .winonaws .winonaws-popular #popularCards > div > div > div > div {
+  .saponaws .saponaws-popular #popularCards > div > div > div > div {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 1.5rem; }
-    .winonaws .winonaws-popular #popularCards > div > div > div > div figure {
+    .saponaws .saponaws-popular #popularCards > div > div > div > div figure {
       margin-bottom: 1.5rem; }
-      .winonaws .winonaws-popular #popularCards > div > div > div > div figure img {
+      .saponaws .saponaws-popular #popularCards > div > div > div > div figure img {
         display: block;
         margin: 0 auto; }
-    .winonaws .winonaws-popular #popularCards > div > div > div > div p:last-child {
+    .saponaws .saponaws-popular #popularCards > div > div > div > div p:last-child {
       font-size: 1.4rem;
       line-height: 2.2rem;
       color: #232F3E;
       margin: 0; }
 
-.winonaws .winonaws-case-studies {
+.saponaws .saponaws-case-studies {
   background-color: #FAFAFA; }
-  .winonaws .winonaws-case-studies h3 {
+  .saponaws .saponaws-case-studies h3 {
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 2rem;
     font-weight: 500;
     line-height: 3rem;
     color: #232F3E;
     margin-bottom: 3rem; }
-  .winonaws .winonaws-case-studies h2 {
+  .saponaws .saponaws-case-studies h2 {
     font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 2.8rem;
     font-weight: 500;
     line-height: 3.6rem;
     color: #232F3E; }
-  .winonaws .winonaws-case-studies #casesVideos {
+  .saponaws .saponaws-case-studies #casesVideos {
     margin-bottom: 3rem; }
-    .winonaws .winonaws-case-studies #casesVideos > div > div > div {
+    .saponaws .saponaws-case-studies #casesVideos > div > div > div {
       position: relative;
       width: 100%;
       padding-right: 15px;
@@ -7258,37 +7258,37 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       max-width: 33.33333%;
       margin-top: 3rem; }
       @media (max-width: 979.98px) {
-        .winonaws .winonaws-case-studies #casesVideos > div > div > div {
+        .saponaws .saponaws-case-studies #casesVideos > div > div > div {
           flex: 0 0 50%;
           max-width: 50%; } }
       @media (max-width: 768.98px) {
-        .winonaws .winonaws-case-studies #casesVideos > div > div > div {
+        .saponaws .saponaws-case-studies #casesVideos > div > div > div {
           flex: 0 0 100%;
           max-width: 100%; } }
-      .winonaws .winonaws-case-studies #casesVideos > div > div > div > div {
+      .saponaws .saponaws-case-studies #casesVideos > div > div > div > div {
         position: relative;
         display: flex;
         flex-direction: column;
         height: 100%;
         background: #ffffff;
         transition: ease 0.2s; }
-        .winonaws .winonaws-case-studies #casesVideos > div > div > div > div p {
+        .saponaws .saponaws-case-studies #casesVideos > div > div > div > div p {
           padding: 1.5rem;
           padding-bottom: 0.5rem; }
-        .winonaws .winonaws-case-studies #casesVideos > div > div > div > div > a {
+        .saponaws .saponaws-case-studies #casesVideos > div > div > div > div > a {
           padding-right: 1.5rem;
           padding-bottom: 1.5rem;
           padding-left: 1.5rem; }
-  .winonaws .winonaws-case-studies .cases {
+  .saponaws .saponaws-case-studies .cases {
     margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px; }
-    .winonaws .winonaws-case-studies .cases + p {
+    .saponaws .saponaws-case-studies .cases + p {
       height: 0;
       margin: 0; }
-    .winonaws .winonaws-case-studies .cases .case-image {
+    .saponaws .saponaws-case-studies .cases .case-image {
       margin-bottom: 0;
       display: flex;
       justify-content: center;
@@ -7300,17 +7300,17 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       flex: 0 0 25%;
       max-width: 25%; }
       @media (max-width: 979.98px) {
-        .winonaws .winonaws-case-studies .cases .case-image {
+        .saponaws .saponaws-case-studies .cases .case-image {
           flex: 0 0 33.33333%;
           max-width: 33.33333%;
           margin-bottom: 3rem; } }
       @media (max-width: 768.98px) {
-        .winonaws .winonaws-case-studies .cases .case-image {
+        .saponaws .saponaws-case-studies .cases .case-image {
           flex: 0 0 100%;
           max-width: 100%; } }
-      .winonaws .winonaws-case-studies .cases .case-image figure {
+      .saponaws .saponaws-case-studies .cases .case-image figure {
         margin-bottom: 0; }
-    .winonaws .winonaws-case-studies .cases .case-content {
+    .saponaws .saponaws-case-studies .cases .case-content {
       align-self: center;
       position: relative;
       width: 100%;
@@ -7319,65 +7319,65 @@ a.text-aws-mercury:hover, a.text-aws-mercury:focus {
       flex: 0 0 75%;
       max-width: 75%; }
       @media (max-width: 979.98px) {
-        .winonaws .winonaws-case-studies .cases .case-content {
+        .saponaws .saponaws-case-studies .cases .case-content {
           flex: 0 0 66.66667%;
           max-width: 66.66667%; } }
       @media (max-width: 768.98px) {
-        .winonaws .winonaws-case-studies .cases .case-content {
+        .saponaws .saponaws-case-studies .cases .case-content {
           flex: 0 0 100%;
           max-width: 100%; } }
-      .winonaws .winonaws-case-studies .cases .case-content p {
+      .saponaws .saponaws-case-studies .cases .case-content p {
         font-size: 1.6rem;
         font-weight: 300;
         line-height: 2.5rem;
         color: #232F3E; }
-        .winonaws .winonaws-case-studies .cases .case-content p:last-child {
+        .saponaws .saponaws-case-studies .cases .case-content p:last-child {
           margin-bottom: 0; }
-        .winonaws .winonaws-case-studies .cases .case-content p strong {
+        .saponaws .saponaws-case-studies .cases .case-content p strong {
           font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
-      .winonaws .winonaws-case-studies .cases .case-content a {
+      .saponaws .saponaws-case-studies .cases .case-content a {
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 2.5rem; }
-  .winonaws .winonaws-case-studies p {
+  .saponaws .saponaws-case-studies p {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 2.5rem;
     color: #232F3E; }
-    .winonaws .winonaws-case-studies p:last-child {
+    .saponaws .saponaws-case-studies p:last-child {
       margin-bottom: 0; }
-    .winonaws .winonaws-case-studies p strong {
+    .saponaws .saponaws-case-studies p strong {
       font-family: AmazonEmberBold,Helvetica Neue Bold,Helvetica Neue,Helvetica,Arial,sans-serif; }
-  .winonaws .winonaws-case-studies a {
+  .saponaws .saponaws-case-studies a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.5rem; }
 
-.winonaws .winonaws-panel {
+.saponaws .saponaws-panel {
   background: #232F3E; }
-  .winonaws .winonaws-panel h1 {
+  .saponaws .saponaws-panel h1 {
     font-size: 2.8rem;
     font-weight: 400;
     line-height: 3.6rem;
     color: #ffffff;
     margin: 0; }
-  .winonaws .winonaws-panel h2 {
+  .saponaws .saponaws-panel h2 {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.7rem;
     color: #ff9900;
     margin-top: 1.5rem;
     margin-bottom: 0; }
-  .winonaws .winonaws-panel h4 {
+  .saponaws .saponaws-panel h4 {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.2rem;
     color: #ffffff;
     margin-top: 1.5rem;
     margin-bottom: 0; }
-  .winonaws .winonaws-panel .winonaws-panel-btt {
+  .saponaws .saponaws-panel .saponaws-panel-btt {
     display: flex;
     justify-content: center;
     padding-top: 3rem; }
 
-/*# sourceMappingURL=win-on-aws.css.map */
+/*# sourceMappingURL=sap-on-aws.css.map */
