@@ -8,7 +8,7 @@
 
 ## Overview of the project
 
-This project is a flat file compiler project using panini to create AAWS landing pages.
+This project is a flat file compiler project using panini to create AWS landing pages.
 
 You will have a few main folders you will work in:
 
@@ -66,7 +66,7 @@ Shows only when in NODE_ENV='production'
 
 This is useful for us as when we add a template to Marketo, unfortunately AWS admins never checked the option to stop the WYSIWYG editor from adding container divs around your code, therefore at times when you need to add in repeatable content that is only repeatable through markup in the WYSIWYG editor on Marketo, then know that that content is inside another div which will probably screw your styles. therefore, style your components with the extra div and in your code, only show that div in development mode via wrapping with `{{#ifequal (prod) false }}`. this way, you can test and preview locally with identical markup as it will be on live. Identifying these div's will be annoying at first no doubt... but good luck ^^b
 
-The second helper `raw.js` is used for when you waant to add handlebars parameters for the platform you are coding for but don't want them parsed by your own project. for example:
+The second helper `raw.js` is used for when you want to add handlebars parameters for the platform you are coding for but don't want them parsed by your own project. for example:
 
 ```
 <!-- Input -->
@@ -87,3 +87,16 @@ var: some-var
 some-var
 <!-- End instead -->
 ```
+
+## The outputs
+
+So after being happy with your page, you can run `npm run build` and the output will be in the `dist` folder, you will now need to upload your css/js file (named same as your page) to Marketo, in Design Studio => Images and Files => Other => css/js (respectively). your page will be in `dist/pages` and you should copy the html contents of the page into a new `landing page template` that you can create from Marketo as follows:
+
+- Goto Design Studio
+- New => Landing page template
+- Enter fields for folder, name, editing mode, desc like so
+  - LUXUS-TEST
+  - [IN DEVELOPMENT] !AWS - {{your-page-name}} - Responsive & Tokenized LP
+  - Guided
+  - {{any-desc-you-like-or-none}}
+
